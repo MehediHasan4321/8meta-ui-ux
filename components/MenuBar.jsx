@@ -140,7 +140,7 @@ const MenuBar = () => {
     const lastMenu = menus.length - 1
 
     return (
-        <div className='w-full flex justify-between items-center py-6 container mx-auto md:px-3'>
+        <div className='w-full flex justify-between items-center py-6 container mx-auto px-2'>
             <div className="flex justify-between items-center gap-x-10">
                 <div className='w-[90px] lg:w-[120px] xl:w-[145px] 2xl:w-[162px] h-auto md:h-[52px] md:pt-2 lg:mt-0 cursor-pointer' >
                     <Image src="/images/logo.png" alt="logo" width={162} height={52} />
@@ -151,10 +151,11 @@ const MenuBar = () => {
                     }
                 </div>
             </div>
-            <div>
+            <div className="hidden md:block">
                 <button className='bg-primary text-white text-[12px] md:px-2 lg:px-4 xl:px-6 2xl:px-8 py-2 xl:py-3 rounded-lg font-semibold'>Get Started</button>
-
-
+            </div>
+            <div className=" md:hidden">
+                menu bar 
             </div>
         </div>
     );
