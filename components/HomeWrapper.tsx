@@ -11,7 +11,7 @@ interface HomeWrapperProps{
 const HomeWrapper:React.FC<HomeWrapperProps> = ({children}) => {
     return (
         <div>
-            <header>
+            <header className='md:px-2'>
                 <ContactBar/>
                 <MenuBar/>
             </header>
