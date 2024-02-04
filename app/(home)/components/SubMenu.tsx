@@ -1,16 +1,18 @@
+`use client`
 import { IconType } from "react-icons";
+
 
 interface SubMenuProps{
     name:string;
     icon:IconType;
     url?:string;
     index:number;
-    length:number
+    length?:number
 }
 
 
 
-const SubMenu:React.FC<SubMenuProps> = ({ name, icon: Icon, url, index, length }) => {
+const SubMenu:React.FC<SubMenuProps> = ({ name, icon: Icon, url, index, length=0 }) => {
     return (
         <div
             onClick={() => alert(name)}

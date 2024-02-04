@@ -3,6 +3,8 @@ import React from 'react';
 import MenuBar from '@/components/MenuBar'
 import ContactBar from './ContactBar';
 
+
+
 interface HomeWrapperProps{
     children:React.ReactNode
 }

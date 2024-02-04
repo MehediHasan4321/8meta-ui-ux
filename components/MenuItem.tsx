@@ -1,13 +1,14 @@
-'use client'
+`use client`
 
 import useDebounce from '@/hooks/useDebounce';
 import React, { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import SubMenu from './SubMenu';
+import { Submenu } from '@/types';
+import SubMenu from '@/app/(home)/components/SubMenu';
 
 interface MenuItemProps{
     name:string,
-    subMenu:any[],
+    subMenu:Submenu[],
     index:number,
     lastMenu:number
 }
