@@ -43,12 +43,12 @@ const MenuItem:React.FC<MenuItemProps> = ({ name, subMenu, index,lastMenu }) => 
 
             >
                 <span className="text-sm md:text-md lg:text-[16px]">{name}</span>
-                <MdKeyboardArrowDown size={20} className={debounceValue ? `rotate-1 transition-all duration-200` : '-rotate-90 transition-all duration-200'} />
+                {subMenu.length>0&&<MdKeyboardArrowDown size={20} className={debounceValue ? `rotate-1 transition-all duration-200` : '-rotate-90 transition-all duration-200'} />}
             </div>
             <div
                 onMouseOver={() => setShow(true)}
                 onMouseLeave={() => setShow(false)}
-                className={debounceValue ? `absolute top-12 ${lastIndex ? `right-2 lg:left-0` : 'left-0'} min-w-[280px] xl:min-w-[340px] z-10 border-[#1f6867] border-[0.1px] h-auto visible rounded-lg overflow-hidden`
+                className={debounceValue && subMenu.length>0 ? `absolute top-12 ${lastIndex ? `right-2 lg:left-0` : 'left-0'} min-w-[280px] xl:min-w-[340px] z-10 border-[#1f6867] border-[0.1px] h-auto visible rounded-lg overflow-hidden`
                     :
                     `hidden`}
             >

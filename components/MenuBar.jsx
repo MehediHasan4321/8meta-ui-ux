@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useState } from "react";
-import MobileMenuItem from "./MobileMenuItem";
+import MobileMenuItem from "./MobileMenu";
 import MenuItem from "./MenuItem";
 import Button from "@/ui/Button";
 import CartMenu from "./CartMenu";
@@ -146,7 +146,7 @@ const MenuBar = () => {
                 </div>
             </div>
             <div className="hidden md:block">
-                <button className='bg-primary text-white text-[12px] md:px-2 lg:px-4 xl:px-6 2xl:px-8 py-2 xl:py-3 rounded-lg font-semibold'>Get Started</button>
+                <Button>Get Started</Button>
             </div>
 
             {/* This is mobile menu bar it's only visible when it is in mobile responsive */}
@@ -172,7 +172,8 @@ const MenuBar = () => {
                         <div>
                             <CartMenu/>
                         </div>
-                        <button className="w-full m-2 py-3 px-5 bg-primary text-white rounded-lg">Get Started</button>
+                        
+                        <Button className="w-full">Get Stated</Button>
                     </div>
                 </div>
             </div>
