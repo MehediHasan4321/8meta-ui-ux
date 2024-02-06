@@ -5,3 +5,8 @@ export interface Submenu{
     icon:IconType;
     url?:string
 }
+
+export interface TextPointers{
+    higlihtText:string;
+    normalText:string
+}

@@ -1,10 +1,12 @@
+import SectionDivider from '@/components/SectionDivider';
 import React from 'react';
+
 
 const ServiceSection = () => {
     return (
-        <div className=' mt-10 md:mt-14 lg:mt-16 xl:mt-20 2xl:mt-[235px] container mx-auto'>
-            This is Service section
-        </div>
+        <SectionDivider>
+            <p className='text-3xl font-semibold text-center'>This is ServiceSection</p>
+        </SectionDivider>
     );
 };
 

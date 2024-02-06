@@ -10,10 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#00A19C',
+        primaryAcent:'#1f6867',
         secondary: '#CCCDCD',
+        borderColor:'#004B49'
       },
       backgroundImage:{
-        'hero':'url(/images/hero-background.png)'
+        'hero':'url(/images/hero-background.png)',
+        'heardware-gradient-bg':'url(/images/gradient-bg.png)'
       },
       
 

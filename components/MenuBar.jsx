@@ -10,7 +10,7 @@ import { ImCross } from "react-icons/im";
 import { useState } from "react";
 import MobileMenuItem from "./MobileMenu";
 import MenuItem from "./MenuItem";
-import Button from "@/ui/Button";
+import Button from "@/components/ui/Button";
 import CartMenu from "./CartMenu";
 
 
@@ -146,7 +146,7 @@ const MenuBar = () => {
                 </div>
             </div>
             <div className="hidden md:block">
-                <Button>Get Started</Button>
+                <Button className="px-2 md:px-4 lg:px-6">Get Started</Button>
             </div>
 
             {/* This is mobile menu bar it's only visible when it is in mobile responsive */}
@@ -173,7 +173,7 @@ const MenuBar = () => {
                             <CartMenu/>
                         </div>
                         
-                        <Button className="w-full">Get Stated</Button>
+                        <Button className="w-full py-2">Get Stated</Button>
                     </div>
                 </div>
             </div>
