@@ -7,7 +7,8 @@ interface SectionTextPointerProps {
 
 const SectionTextPointer: React.FC<SectionTextPointerProps> = ({ textPointers }) => {
     return (
-        <div className='flex flex-row gap-x-2 relative ml-2'>
+        
+        <div className='flex flex-row gap-x-2 relative ml-2 mt-4 mb-6'>
             <div className=' absolute -left-[6px]  max-w-6 rounded-full h-full border-[#262E2d] border-[0.2px] flex flex-col items-center gap-y-6 py-1 px-3'>
                 {/* {textPointers.map((_, index) => <Dot key={index} />)} */}
             </div>

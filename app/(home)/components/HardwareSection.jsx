@@ -9,6 +9,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import SectionTextPointer from './SectionTextPointer';
 import { FaServer } from "react-icons/fa6";
 import SectionPara from '@/components/SectionPara';
+import IconPointer from '@/components/share/IconPointer';
 
 const HardwareSection = () => {
 
@@ -54,9 +55,8 @@ const HardwareSection = () => {
                 <SectionHeading heading='Latest Generation' />
                 <SectionHeading heading='Servers for All Workloads' />
                 <SectionPara para="DataPacket's stock offers a wide array of configuration choices including the latest CPUs. Coupled with an overprovisioned network, even large-scale and complex deployments are executed with ease."/>
-                <div className='mt-4 mb-6'>
-                    <SectionTextPointer textPointers={textPointers} />
-                </div>
+                <SectionTextPointer textPointers={textPointers} />
+                
                 <Button className='px-10 w-fit' icon={IoIosArrowForward} >
                     BROWSE CONFIGURATIONS
                 </Button>
@@ -90,9 +90,7 @@ const HardwareSection = () => {
                             <div className='border-[1px] border-borderColor p-3 rounded-lg '>
                                 <Image src={'/images/server.png'} className='object-cover' width={40} height={40} alt='server'/>
                             </div>
-                            <div className='border-[1px] border-borderColor p-3 rounded-lg '>
-                                <FaServer className='text-primary' size={20}/>
-                            </div>
+                            <IconPointer icon={FaServer}/>
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,7 @@
 import ServerClient from '@/app/(home)/components/ServerClient';
 import Image from 'next/image';
 import { MdKeyboardArrowDown } from "react-icons/md";
-
+import {Clients} from '@/utils/index'
 
 
 
@@ -10,25 +10,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Hero = () => {
    
-    const Clients = [
-        {
-            src: '/images/client/client-1.png'
-        },
-        {
-            src: '/images/client/client-2.png'
-        },
-        {
-            src: '/images/client/client-3.png'
-        },
-        {
-            src: '/images/client/client-4.png'
-        },
-
-    ]
-
-
-
-
+    
 
     return (
 
