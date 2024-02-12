@@ -11,6 +11,7 @@ import { AiOutlineGlobal } from "react-icons/ai";
 import { FiShare2 } from "react-icons/fi";
 import IconPointer from '@/components/share/IconPointer';
 import { GiAerialSignal } from "react-icons/gi";
+import { FaConnectdevelop } from "react-icons/fa";
 
 
 
@@ -52,7 +53,7 @@ const NetworkSection = () => {
                 <div className='absolute -bottom-[53px] left-10 w-[356px] h-[250px] border-borderColor border-[1px] rounded-xl '>
                     <div className='relative w-full h-full'>
                         <div className='absolute -left-6 top-10 bg-black h-[150px] w-fit flex flex-col justify-between items-center'>
-                            <IconPointer icon={GiAerialSignal} />
+                            <IconPointer icon={FaConnectdevelop} />
                             <IconPointer icon={GiAerialSignal} />
                         </div>
                     </div>
