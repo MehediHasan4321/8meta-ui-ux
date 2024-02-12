@@ -24,7 +24,7 @@ const SectionTextPointer: React.FC<SectionTextPointerProps> = ({ textPointers })
 
 const Dot = () => {
     return (
-        <div className='rounded-full h-[14px] p-[2px] border-[#333a39] border-[3px] mt-2'>
+        <div className='rounded-full h-[14px] p-[2px] border-[#333a39] border-[3px] md:mt-0 lg:mt-1 2xl:mt-2'>
             <div className='bg-primary w-1 h-1 rounded-full' />
         </div>
     )
@@ -39,7 +39,7 @@ const Para:React.FC<ParaProps> = ({higlihtText,normalText})=>{
     return(
         <div className='flex flex-row items-top gap-x-4'>
             <Dot/>
-            <p className='text-white text-sm md:text-md lg:text-lg font-semibold'><span className='text-primary'>{higlihtText}</span> {normalText}</p>
+            <p className='text-white text-sm md:text-[12px] lg:text-[14px] xl:text-lg font-semibold'><span className='text-primary'>{higlihtText}</span> {normalText}</p>
         </div>
     )
 }

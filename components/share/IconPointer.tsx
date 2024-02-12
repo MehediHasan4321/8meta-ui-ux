@@ -8,8 +8,8 @@ interface IconPointerProps {
 
 const IconPointer: React.FC<IconPointerProps> = ({ icon: Icon }) => {
     return (
-        <div className=' w-fit p-3 bg-black rounded-lg border-borderColor border-[1px]'>
-            <Icon size={30} className='text-primary' />
+        <div className=' w-fit p-2 md:p-3 bg-black rounded-lg border-borderColor border-[1px]'>
+            <Icon  className='text-primary text-[18px] 2xl:text-[30px]' />
         </div>
     );
 };

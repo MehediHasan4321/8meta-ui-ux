@@ -10,7 +10,7 @@ const Page = () => {
             <HardwareSection/>
             <NetworkSection />
             <ServiceSection />
-            <TrustedClients/>
+            {/* <TrustedClients/> */}
         </>
     );
 };
