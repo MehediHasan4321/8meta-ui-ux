@@ -12,6 +12,7 @@ import { FiShare2 } from "react-icons/fi";
 import IconPointer from '@/components/share/IconPointer';
 import { GiAerialSignal } from "react-icons/gi";
 import { FaConnectdevelop } from "react-icons/fa";
+import SectionImage from './SectionImage';
 
 
 
@@ -38,8 +39,10 @@ const NetworkSection = () => {
 
     return (
         <SectionDivider className='w-full flex flex-col md:flex-row md:items-center md:justify-between'>
-            <div className='w-full md:w-1/2 flex justify-center items-center p-2 md:p-6 relative'>
-                <Image src={'/images/network-bitmap.png'} className='z-10' width={510} height={530} alt='heareware-bitmap' />
+            <div className='w-full md:w-1/2 flex justify-center items-center p-2 md:p-6 relative order-2 md:order-1'>
+                
+                <SectionImage className='z-10' src='/images/network-bitmap.png' alt='heareware-bitmap'/>
+                
                 <div className=' absolute -top-8 left-0 w-[336px] h-[250px] border-borderColor border-[1px] rounded-2xl '>
                     <div className='relative w-full h-full'>
                         <div className='absolute top-20 -left-6 bg-black'>
@@ -60,7 +63,7 @@ const NetworkSection = () => {
                 </div>
             </div>
 
-            <div className='w-full md:w-1/2 mb-5 md:mb-0 flex flex-col gap-y-4  '>
+            <div className='w-full md:w-1/2 mb-5 md:mb-0 flex flex-col gap-y-4 order-1 md:order-2  '>
                 <SectionTitle title='global network' />
                 <SectionHeading heading='Backed by low-latency' />
                 <SectionHeading heading='150+ Tbps network' />

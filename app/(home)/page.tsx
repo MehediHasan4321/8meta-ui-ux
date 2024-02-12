@@ -8,9 +8,9 @@ const Page = () => {
         <>
             <Hero/>
             <HardwareSection/>
-            <NetworkSection />
+            {/* <NetworkSection />
             <ServiceSection />
-            <TrustedClients/>
+            <TrustedClients/> */}
         </>
     );
 };

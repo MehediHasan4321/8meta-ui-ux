@@ -41,7 +41,7 @@ const ServiceSection = () => {
         <SectionDivider className='w-full flex flex-col md:flex-row md:items-center md:justify-between'>
 
 
-            <div className='w-full md:w-1/2 mb-5 md:mb-0 flex flex-col gap-y-4  '>
+            <div className='w-full md:w-1/2 mb-5 md:mb-0 flex flex-col gap-y-4 order-1 '>
                 <SectionTitle title='Primum Services' />
                 <SectionHeading heading='Exceptional Client ' />
                 <SectionHeading heading='Service as a standard' />
@@ -51,7 +51,7 @@ const ServiceSection = () => {
                     LEARN ABOUT 8meta’S APPROACH
                 </Button>
             </div>
-            <div className='w-full md:w-1/2 flex justify-center items-center p-2 md:p-6 relative'>
+            <div className='w-full md:w-1/2 flex justify-center items-center p-2 md:p-6 relative order-2'>
                 <SectionImage src='/images/services-bitmap.png' className='z-10' />
                 <div className='absolute -top-5 -left-5 w-[320px] h-[340px] border-borderColor border-[1px] rounded-2xl '>
                     <div className='relative w-full h-full m-1'>

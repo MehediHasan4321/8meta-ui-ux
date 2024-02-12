@@ -8,7 +8,7 @@ interface SectionTitleProps{
 
 const SectionTitle:React.FC<SectionTitleProps> = ({title,className}) => {
     return (
-        <p className={twMerge(`text-sm  lg:text-lg font-semibold tracking-[5px] text-primary uppercase text-center md:text-left`,className)}>{title}</p>
+        <p className={twMerge(`text-[12px]  lg:text-lg font-semibold tracking-[5px] text-primary uppercase text-center md:text-left`,className)}>{title}</p>
     );
 };
 
