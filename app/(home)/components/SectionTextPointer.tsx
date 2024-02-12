@@ -39,7 +39,7 @@ const Para:React.FC<ParaProps> = ({higlihtText,normalText})=>{
     return(
         <div className='flex flex-row items-top gap-x-4'>
             <Dot/>
-            <p className='text-white text-sm md:text-[12px] lg:text-[14px] font-semibold'><span className='text-primary'>{higlihtText}</span> {normalText}</p>
+            <p className='text-white text-sm md:text-[12px] lg:text-[14px] xl:text-lg font-semibold'><span className='text-primary'>{higlihtText}</span> {normalText}</p>
         </div>
     )
 }
