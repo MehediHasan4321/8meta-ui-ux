@@ -8,10 +8,11 @@ import React from 'react';
 import SectionTextPointer from './SectionTextPointer';
 import { IoIosArrowForward } from 'react-icons/io';
 import Button from '@/components/ui/Button';
-import { FiShare2 } from 'react-icons/fi';
+import { IoDiamondOutline } from "react-icons/io5";
 import { LuRadioTower } from "react-icons/lu";
 import { FaServer } from "react-icons/fa";
 import IconPointer from '@/components/share/IconPointer';
+import SectionImage from './SectionImage';
 
 
 const ServiceSection = () => {
@@ -51,17 +52,32 @@ const ServiceSection = () => {
                 </Button>
             </div>
             <div className='w-full md:w-1/2 flex justify-center items-center p-2 md:p-6 relative'>
-                <Image src={'/images/services-bitmap.png'} className='z-10' width={510} height={530} alt='heareware-bitmap' />
+                <SectionImage src='/images/services-bitmap.png' className='z-10' />
                 <div className='absolute -top-5 -left-5 w-[320px] h-[340px] border-borderColor border-[1px] rounded-2xl '>
-
+                    <div className='relative w-full h-full m-1'>
+                        <div className='absolute -top-8 -left-2 bg-black w-[100px] h-[60px]'>
+                            <div className='relative w-full h-full'>
+                                <div className='absolute right-0'>
+                                    <IconPointer icon={FaServer} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='absolute top-0 -left-6 bg-black w-[60px] h-[200px]'>
+                            <div className='relative w-full h-full'>
+                                <div className='absolute bottom-0 -left-2'>
+                                    <IconPointer icon={IoDiamondOutline} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='absolute -bottom-10 left-10 w-[280px] h-[240px] border-borderColor border-[1px] border-t-0 rounded-2xl '>
                     <div className='relative w-full h-full'>
                         <div className='absolute top-0 -left-6 bg-black'>
-                            <IconPointer icon={FaServer}/>
+                            <IconPointer icon={FaServer} />
                         </div>
-                        <div className='absolute top-20 -left-6 bg-black'>
-                            <IconPointer icon={LuRadioTower}/>
+                        <div className='absolute top-24 -left-6 bg-black'>
+                            <IconPointer icon={LuRadioTower} />
                         </div>
                     </div>
                 </div>
