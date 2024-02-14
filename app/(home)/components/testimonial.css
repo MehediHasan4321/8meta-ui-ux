@@ -1,0 +1,15 @@
+.slick-arrow{
+    top: -145px;
+    left: 95%;
+   
+}
+
+.slick-prev{
+    left: 96%;
+    
+}
+
+.slick-next{
+    left: 98%;
+    font-size: 55px;
+}

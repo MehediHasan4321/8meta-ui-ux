@@ -5,7 +5,6 @@ import SectionPara from '@/components/SectionPara';
 import SectionTitle from '@/components/SectionTitle';
 import Button from '@/components/ui/Button';
 import SectionTextPointer from './SectionTextPointer';
-import Image from 'next/image';
 import { IoIosArrowForward } from 'react-icons/io';
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FiShare2 } from "react-icons/fi";
