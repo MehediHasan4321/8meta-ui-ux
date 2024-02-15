@@ -1,4 +1,5 @@
 import { Testimonial } from '@/types';
+import Image from 'next/image';
 import React from 'react';
 
 
@@ -11,15 +12,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ card }) => {
     
     return (
         <div className='w-full xl:w-[540px] min-h-fit bg-neutral-950 text-white p-[70px] flex flex-col gap-y-10 justify-start rounded-lg '>
-            <div>
-                <img src={logo} />
+            <div className=''>
+                <Image src={logo} alt='logo' height={130} width={130} />
             </div>
             <div>
                 <p className='text-lg'>{review}</p>
             </div>
             <div className='flex flex-row gap-x-4 items-center'>
                 <div className='w-[80px] h-[80px] rounded-full border-[1px] border-borderColor overflow-hidden'>
-                    <img src={'/images/testimonial-avater.png'}  className='w-full h-full object-cover' alt='avater'/>
+                    <Image height={80} width={80} src={'/images/testimonial-avater.png'}  className='w-full h-full object-cover' alt='avater'/>
                 </div>
                 <div>
                     <h2 className='text-lg font-semibold'>{name}</h2>

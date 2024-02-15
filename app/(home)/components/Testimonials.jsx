@@ -2,43 +2,50 @@
 import React from 'react';
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { IoMdStar } from "react-icons/io";
-
-import { testimonials, settings } from '@/constants';
+import { testimonials, swiperSettings } from '@/constants';
 import TestimonialCard from './TestimonialCard';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
-// import './testimonial.css'
+import 'swiper/css';
+import { SwiperSlide, Swiper, useSwiper } from 'swiper/react';
+
 
 const Testimonials = () => {
 
-
-
     return (
-        <div className='container mx-auto my-[137px]'>
-            <div className='w-full flex justify-center md:justify-between items-center'>
-                <div className='flex  flex-col gap-y-4'>
-                    <h1 className='text-4xl lg:text-6xl font-semibold '>Why clients appreciate</h1>
-                    <h1 className='text-4xl lg:text-6xl font-semibold'>working with <span className='text-primary'>8meta ?</span></h1>
-                </div>
-                <div>
-                    <button> <MdArrowBackIos size={40} /> </button>
-                    <button><MdArrowForwardIos size={40} /></button>
-                </div>
-            </div>
-            <div className='py-20'>
-                <Slider {...settings}>
+        <div className='container mx-auto md:my-[137px]'>
+
+
+            {/* Testimonial  slider sections */}
+            <div className='py-8 md:py-20'>
+
+
+                <Swiper
+                    {...swiperSettings}
+                    className='relative min-h-[80vh]'
+                >
                     {
-                        testimonials.map(card => (<div key={card.id}>
-                            <TestimonialCard card={card} />
-                        </div>))
+                        testimonials.map(item => <SwiperSlide className='absolute top-20 md:top-48' key={item.id}>
+                            <TestimonialCard card={item} />
+                        </SwiperSlide>)
                     }
-                </Slider>
+
+                    {/* Swiper navigation button only visible when it is in medium devices */}
+                    <div className=' absolute w-full top-0 right-0'>
+                        <SwiperHeader />
+                    </div>
+
+                    {/* Swiper navigation button only visible when it is in mobile divices */}
+
+                    <div className='visible md:hidden absolute bottom-0 left-[40%]'>
+                        <SwiperButton />
+                    </div>
+                </Swiper>
             </div>
+
+
             <div className='flex flex-col gap-3 md:flex-row items-center'>
                 <div className='w-full md:w-1/2'>
-                <p className='font-semibold'>Ranked among the top server providers in the industry on:</p>
+                    <p className='text-[14px] md:text-[18px] text-center md:text-left font-semibold'>Ranked among the top server providers in the industry on:</p>
                 </div>
                 <div className='flex flex-row gap-x-10 items-center'>
                     <div className='flex flex-row gap-x-4 items-center'>
@@ -53,13 +60,13 @@ const Testimonials = () => {
                     <div className='flex flex-row gap-x-4 items-center'>
                         <div className='flex flex-row items-center gap-x-4'>
                             <div className='flex items-center'>
-                                <IoMdStar size={25} fill='white'/>
+                                <IoMdStar size={25} fill='white' />
                                 <h1 className='text-[18px] text-white'>TrustPilot</h1>
                             </div>
                             <div className='border-[1px] border-borderColor py-2 px-3 rounded-xl flex flex-row gap-x-6 items-center'>
-                            <p>4.9</p>
-                            <IoMdStar fill='orange' />
-                        </div>
+                                <p>4.9</p>
+                                <IoMdStar fill='orange' />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,6 +74,38 @@ const Testimonials = () => {
         </div>
     );
 };
+
+
+const SwiperHeader = () => {
+
+    return (
+        <div className='w-full flex justify-center md:justify-between items-center'>
+            <div className='flex  flex-col gap-y-4'>
+                <h1 className='text-4xl lg:text-6xl font-semibold '>Why clients appreciate</h1>
+                <h1 className='text-4xl lg:text-6xl font-semibold'>working with <span className='text-primary'>8meta ?</span></h1>
+            </div>
+            <div className='hidden md:flex'>
+                <SwiperButton />
+            </div>
+        </div>
+
+    )
+}
+
+const SwiperButton = () => {
+    const swiper = useSwiper()
+    return (
+        <div className='flex flex-row gap-2 items-center'>
+            <MdArrowBackIos
+            
+                className='cursor-pointer disabled:text-secondary'
+                onClick={() => swiper.slidePrev()} size={40} />
+            <MdArrowForwardIos
+                className='cursor-pointer'
+                onClick={() => swiper.slideNext()} size={40} />
+        </div>
+    )
+}
 
 
 export default Testimonials;

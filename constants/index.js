@@ -88,6 +88,25 @@ export const settings = {
     slidesToScroll: 1,
 };
 
+export const swiperSettings = {
+    slidesPerView:1,
+    spaceBetween:50,
+    breakpoints:{
+        480:{
+          slidesPerView:1
+        },
+        600:{
+          slidesPerView:1.5
+        },
+        750:{
+          slidesPerView:2
+        },
+        1100:{
+          slidesPerView:2.5
+        }
+      }
+}
+
 
 export const footerSecures = {
     "PRODUCT":[
