@@ -3,7 +3,10 @@ import { MdOutlineVpnLock } from "react-icons/md";
 import { IoGameController } from "react-icons/io5";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { RiFacebookCircleFill,RiTwitterFill,RiGithubFill } from "react-icons/ri";
-
+import { MdNetworkCheck } from "react-icons/md";
+import { IoDiamondOutline } from "react-icons/io5";
+import { MdOutlineSecurity } from "react-icons/md";
+import { GrStorage } from "react-icons/gr";
 
 export const Clients = [
     {
@@ -80,14 +83,6 @@ export const testimonials = [
     }
 ]
 
-export const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2.5,
-    slidesToScroll: 1,
-};
-
 export const swiperSettings = {
     slidesPerView:1,
     spaceBetween:50,
@@ -107,6 +102,28 @@ export const swiperSettings = {
       }
 }
 
+export const useCaseSwiperSettings = {
+    slidesPerView:1,
+    spaceBetween:20,
+    breakpoints:{
+
+        640:{
+          slidesPerView:2
+        },
+        768:{
+          slidesPerView:2
+        },
+        1024:{
+            slidesPerView:3
+        },
+        1100:{
+          slidesPerView:4
+        },
+        
+      },
+      speed:500,
+     
+}
 
 export const footerSecures = {
     "PRODUCT":[
@@ -232,3 +249,135 @@ export const footerSecures = {
     }
 
 }
+
+export const menus = [
+    {
+        name: 'Whay 8Meta',
+        subMenu: [
+            {
+                name: 'Premume Network',
+                icon: MdNetworkCheck,
+                url: '/'
+            },
+            {
+                name: 'Exceptional client service',
+                icon: IoDiamondOutline,
+                url: '/'
+            },
+            {
+                name: 'Built-in DDoS protection',
+                icon: MdOutlineSecurity,
+                url: ''
+            },
+            {
+                name: 'Latest hardware',
+                icon: GrStorage,
+                url: '/'
+            }
+        ]
+    },
+    {
+        name: 'Location',
+        subMenu: [
+            {
+                name: 'Premume Network',
+                icon: MdNetworkCheck,
+                url: '/'
+            },
+            {
+                name: 'Exceptional client service',
+                icon: IoDiamondOutline,
+                url: '/'
+            },
+            {
+                name: 'Built-in DDoS protection',
+                icon: MdOutlineSecurity,
+                url: ''
+            },
+            {
+                name: 'Latest hardware',
+                icon: GrStorage,
+                url: '/'
+            }
+        ]
+    },
+    {
+        name: 'Use Cases',
+        subMenu: [
+            {
+                name: 'Premume Network',
+                icon: MdNetworkCheck,
+                url: '/useCase'
+            },
+            {
+                name: 'Exceptional client service',
+                icon: IoDiamondOutline,
+                url: '/'
+            },
+            {
+                name: 'Built-in DDoS protection',
+                icon: MdOutlineSecurity,
+                url: ''
+            },
+            {
+                name: 'Latest hardware',
+                icon: GrStorage,
+                url: '/'
+            }
+        ]
+    },
+    {
+        name: 'Pricing',
+        subMenu: [],
+        url: '/pricing'
+    }, {
+        name: 'Company',
+        subMenu: [
+            {
+                name: 'Premume Network',
+                icon: MdNetworkCheck,
+                url: '/'
+            },
+            {
+                name: 'Exceptional client service',
+                icon: IoDiamondOutline,
+                url: '/'
+            },
+            {
+                name: 'Built-in DDoS protection',
+                icon: MdOutlineSecurity,
+                url: ''
+            },
+            {
+                name: 'Latest hardware',
+                icon: GrStorage,
+                url: '/'
+            }
+        ]
+    }
+]
+
+export const useCaseFeatures = [
+    {
+        id: '1',
+        title: '4 Locations',
+        subTitle: 'on 3 continents'
+    },
+    {
+        id: '2',
+        title: '150+ Tbps',
+        subTitle: 'network capacity'
+    },
+    {
+        id: '3',
+        title: 'Unmetered',
+        subTitle: 'bandwidth'
+    },
+    {
+        id: '4',
+        title: '24/7 tech support',
+        subTitle: '& dedicated account manager'
+    },
+
+
+]

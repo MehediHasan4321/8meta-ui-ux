@@ -1,13 +1,13 @@
+import Container from '@/components/share/Container';
+import PageLoading from '@/components/share/PageLoading';
 import React from 'react';
 
-const loading = () => {
+const Loading = () => {
     return (
-        <div className='container mx-auto'>
-            <div className='my-20'>
-                <p className='text-4xl font-semibold text-center'>Loading....</p>
-            </div>
-        </div>
+        <Container>
+            <PageLoading/>
+        </Container>
     );
 };
 
-export default loading;
+export default Loading;
