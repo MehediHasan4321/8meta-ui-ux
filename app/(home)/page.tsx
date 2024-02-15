@@ -3,6 +3,11 @@ import ServiceSection from '@/app/(home)/components/ServiceSection'
 import HardwareSection from '@/app/(home)/components/HardwareSection'
 import NetworkSection from '@/app/(home)/components/NetworkSection'
 import TrustedClients from "@/components/share/TrustedClients";
+import UseCase from "./components/UseCase";
+import Testimonials from "./components/Testimonials";
+import DedicatedServer from "./components/DedicatedServer";
+
+
 const Page = () => {
     return (
         <>
@@ -10,7 +15,10 @@ const Page = () => {
             <HardwareSection/>
             <NetworkSection />
             <ServiceSection />
-            {/* <TrustedClients/> */}
+            <TrustedClients/>
+            <UseCase/>
+            <Testimonials />
+            <DedicatedServer/>
         </>
     );
 };

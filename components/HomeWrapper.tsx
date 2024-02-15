@@ -1,7 +1,8 @@
-
+'use client'
 import React from 'react';
 import MenuBar from '@/components/MenuBar'
 import ContactBar from './ContactBar';
+import Footer from './footer/Footer';
 
 
 
@@ -20,6 +21,9 @@ const HomeWrapper:React.FC<HomeWrapperProps> = ({children}) => {
             <main>
                 {children}
             </main>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     );
 };

@@ -1,8 +1,9 @@
 'use client'
 import ServerClient from '@/app/(home)/components/ServerClient';
+import { Clients } from '@/constants';
 import Image from 'next/image';
 import { MdKeyboardArrowDown } from "react-icons/md";
-import {Clients} from '@/utils/index'
+
 
 
 
