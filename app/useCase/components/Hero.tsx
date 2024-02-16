@@ -12,7 +12,7 @@ const Hero = () => {
 
     return (
         <Container>
-            <div className='w-full h-[90vh] flex flex-col md:flex-row items-center   gap-x-10 relative'>
+            <div className='w-full h-[90vh] flex flex-col md:flex-row items-center  relative'>
                 <div className='w-full md:w-1/2 lg:w-2/5 flex flex-col md:ml-3 md:-mt-32 bg-transparent'>
                     <div className='text-center md:text-left text-4xl xl:text-5xl 2xl:text-6xl space-y-2 font-semibold text-white '>
                         <h1>Build Your <span className='text-primary'>CDN</span></h1>
@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className='w-full md:w-1/2  lg:w-4/6 h-full aspect-square relative  -mt-[60px] md:mt-0'>
                     <Image src={'/images/useCase/Banner-Usecase.png'} fill className='w-full h-full object-cover' alt='useCase banner' />
                 </div>
-                <div className='absolute bottom-10 md:bottom-0 w-full z-50 '>
+                <div className='absolute bottom-10  md:bottom-0 xl:bottom-5 2xl:bottom-16 w-full z-50 '>
                     
                     <Swiper
                         {...useCaseSwiperSettings}
