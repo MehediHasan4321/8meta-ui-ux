@@ -121,9 +121,36 @@ export const useCaseSwiperSettings = {
         },
         
       },
-      speed:500,
      
 }
+
+export const useCaseHardwareSwiperSetting={
+    slidesPerView:1,
+    spaceBetween:20,
+    breakpoints:{
+
+        640:{
+          slidesPerView:1
+        },
+        768:{
+          slidesPerView:1
+        },
+        1024:{
+            slidesPerView:1.5
+        },
+        1100:{
+          slidesPerView:2
+        },
+        1250:{
+            slidesPerView:2
+        },
+        1400:{
+            slidesPerView:2.5
+        }
+        
+      },
+}
+
 
 export const footerSecures = {
     "PRODUCT":[
@@ -380,4 +407,105 @@ export const useCaseFeatures = [
     },
 
 
+]
+
+export const hardwares = [
+    {
+        id:'hard001',
+        hardwareName:'1 x Interl E-2336',
+        hardwareSerice:'Intel Xeon E-2336',
+        hardwareLine:'Rocket Lake',
+        hardwareCache:'12 MB Intel Smart Cache',
+        hardwareGhz:'2.9 GHz (4.8 GHz turbo)',
+        hardwareConfig:{
+            cores:'6 Cores',
+            threads:'12 Threads',
+            ghz:'2.9 Ghz'
+        },
+        hardwareImg:'/images/hardwares/intelSilver.png',
+        hardwareRams:[
+            {
+                name:'Ram',
+                config:'256 GB Ram'
+            },
+            {
+                name:'Storage',
+                config:'2 * 512 GB SSD'
+            },
+            {
+                name:'Uplink',
+                config:'1 - 40 Gbps'
+            }
+        ],
+        tag:'POPULAR',
+        status:'In Stock',
+        price:174,
+        duration:1,
+
+    },
+    {
+        id:'hard002',
+        hardwareName:'1 × AMD EPYC 7443P',
+        hardwareSerice:'Raizen AMD EPYC-7443P',
+        hardwareLine:'AMD',
+        hardwareCache:'',
+        hardwareGhz:'2.85 Ghz',
+        hardwareConfig:{
+            cores:'24 Cores',
+            threads:'48 Threads',
+            ghz:'2.85 Ghz'
+        },
+        hardwareImg:'/images/hardwares/amdepyc.png',
+        hardwareRams:[
+            {
+                name:'Ram',
+                config:'256 GB Ram'
+            },
+            {
+                name:'Storage',
+                config:'2 * 4 TB NVMe'
+            },
+            {
+                name:'Uplink',
+                config:'20 or 40 Gbps'
+            }
+        ],
+        tag:'POPULAR',
+        status:'In Stock',
+        price:180,
+        duration:1
+    },
+    {
+        id:'hard003',
+        hardwareName:'2 x Intel Silver 4316',
+        hardwareSerice:'Intel Sliver-4316',
+        hardwareLine:'Rocket Lake',
+        hardwareCache:'26',
+        hardwareGhz:'2.3 Ghz',
+        hardwareConfig:{
+            cores:'40 Cores',
+            threads:'80 Threads',
+            ghz:'2.3 Ghz'
+        },
+        hardwareImg:'/images/hardwares/intelSilver.png',
+        hardwareRams:[
+            {
+                name:'Ram',
+                config:'256 GB Ram'
+            },
+            {
+                name:'Storage',
+                config:'2 * 512 GB SSD'
+            },
+            {
+                name:'Uplink',
+                config:'1 - 40 Gbps'
+            }
+        ],
+        tag:'POPULAR',
+        status:'On Request',
+        price:174,
+        duration:1
+    },
+   
 ]

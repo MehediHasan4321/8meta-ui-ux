@@ -3,8 +3,6 @@ import SectionDivider from '@/components/SectionDivider';
 import SectionHeading from '@/components/SectionHeading';
 import SectionPara from '@/components/SectionPara';
 import IconPointer from '@/components/share/IconPointer';
-import { AiOutlineGlobal } from "react-icons/ai";
-import { FiPhoneCall } from "react-icons/fi";
 
 import React from 'react';
 
@@ -13,25 +11,25 @@ const DedicatedManager = () => {
         <SectionDivider className='w-full flex flex-col gap-6 md:flex-row md:items-center justify-around '>
             <div className='w-full md:w-1/2 flex justify-start xl:justify-center items-center p-2 md:p-4 lg:px-6 relative order-1 my-20 md:my-0 '>
                 <SectionImage src='/images/useCase/manager.png' alt='dedicated manager image' className='2xl:w-[620px] 2xl:h-[410px]'>
-                    <div className='absolute w-[100px] border-t-[1px] border-borderColor -right-[25px] top-10'>
+                    <div className='absolute w-[100px] border-t-[1px] border-borderColor -right-[20px] lg:-right-[25px] top-10'>
                         <div className='relative w-full'>
-                            <div className='absolute -right-[60px] -top-7'>
+                            <div className='absolute -right-[50px] lg:-right-[60px] -top-7'>
                                 <IconPointer image='/images/icons/manager.png' />
                             </div>
                         </div>
                     </div>
-                    <div className='absolute w-[70px] h-[60px] border-t-[1px] border-r-[1px] border-borderColor -right-[56px] bottom-[40%] rounded-2xl'>
+                    <div className='absolute w-[70px] h-[60px] border-t-[1px] border-r-[1px] border-borderColor -right-[48px] lg:-right-[56px] bottom-[40%] rounded-2xl'>
                         <div className='relative w-full'>
-                            <div className='absolute -right-[30px] top-7'>
-                                <IconPointer icon={AiOutlineGlobal}/>
+                            <div className='absolute -right-[25px] lg:-right-[25px]  2xl:-right-[30px] top-7'>
+                                <IconPointer image='/images/icons/Globel.png'/>
                             </div>
                         </div>
                     </div>
 
-                    <div className='absolute 2xl:w-[286px] h-[53px] border-b-[1px] border-r-[1px] border-l-[1px] border-borderColor -right-[40px] -bottom-[32px] rounded-2xl '>
+                    <div className='absolute w-[150px] lg:w-[200px] 2xl:w-[286px] h-[53px] border-b-[1px] border-r-[1px] border-l-[1px] border-borderColor -right-[40px] -bottom-[32px] rounded-2xl '>
                     <div className='relative w-full h-full'>
-                            <div className='absolute -right-[30px] bottom-10'>
-                                <IconPointer icon={FiPhoneCall} />
+                            <div className='absolute -right-[20px] md:-right-[25px] lg:-right-[30px] 2xl:-right-[35px] bottom-10'>
+                                <IconPointer image='/images/icons/call.png' />
                             </div>
                         </div>
                     </div>
