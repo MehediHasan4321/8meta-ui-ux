@@ -6,7 +6,6 @@ import Input from './ui/Input';
 import { FAQs } from '@/constants';
 import FAQButton from './ui/FAQButton';
 import { Accordion } from 'react-accessible-accordion';
-
 import { arrToObj } from '@/utils/index'
 import AccordionQus from './ui/AccordionQus';
 
