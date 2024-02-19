@@ -13,7 +13,7 @@ const HardwareCard: React.FC<HardwareCardProps> = ({ hardware, className }) => {
     const { hardwareConfig, hardwareImg, hardwareName, tag, hardwareRams, status } = hardware
 
     return (
-        <div className={twMerge('max-w-[340px] max-h-[480px] overflow-hidden rounded-xl  bg-neutral-950', className)}>
+        <div className={twMerge('max-w-[340px] max-h-[480px] overflow-hidden rounded-xl  bg-neutral-900', className)}>
             <div className='pr-[30px] pl-[30px] pt-[30px]'>
                 <div className='bg-primary text-white px-[6px] py-[2px] w-fit text-[10px] font-normal rounded-md'>{tag}</div>
                 <div className='flex flex-col gap-y-[7px] mt-[26px]'>

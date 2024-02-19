@@ -5,6 +5,8 @@ import Contents from './components/Contents';
 import DedicatedManager from './components/DedicatedManager';
 import UseCaseTestimonial from './components/UseCaseTestimonial';
 import Hardware from './components/Hardware';
+import FAQSection from '@/components/FAQSection';
+
 
 const page = () => {
     return (
@@ -15,6 +17,7 @@ const page = () => {
         <DedicatedManager/>
         <UseCaseTestimonial/>
         <Hardware/>
+        <FAQSection/>
         </>
     );
 };

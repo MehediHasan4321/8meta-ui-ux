@@ -1,12 +1,16 @@
 import { TfiVideoClapper } from "react-icons/tfi";
-import { MdOutlineVpnLock } from "react-icons/md";
+import { MdOutlineVpnLock, MdSecurity } from "react-icons/md";
 import { IoGameController } from "react-icons/io5";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { RiFacebookCircleFill,RiTwitterFill,RiGithubFill } from "react-icons/ri";
+import { RiFacebookCircleFill, RiTwitterFill, RiGithubFill,RiMoneyDollarCircleLine } from "react-icons/ri";
 import { MdNetworkCheck } from "react-icons/md";
 import { IoDiamondOutline } from "react-icons/io5";
 import { MdOutlineSecurity } from "react-icons/md";
 import { GrStorage } from "react-icons/gr";
+import { HiOutlineSupport } from "react-icons/hi";
+
+
+
 
 export const Clients = [
     {
@@ -84,193 +88,193 @@ export const testimonials = [
 ]
 
 export const swiperSettings = {
-    slidesPerView:1,
-    spaceBetween:50,
-    breakpoints:{
-        480:{
-          slidesPerView:1
+    slidesPerView: 1,
+    spaceBetween: 50,
+    breakpoints: {
+        480: {
+            slidesPerView: 1
         },
-        600:{
-          slidesPerView:1.5
+        600: {
+            slidesPerView: 1.5
         },
-        750:{
-          slidesPerView:2
+        750: {
+            slidesPerView: 2
         },
-        1100:{
-          slidesPerView:2.5
+        1100: {
+            slidesPerView: 2.5
         }
-      }
+    }
 }
 
 export const useCaseSwiperSettings = {
-    slidesPerView:1,
-    spaceBetween:20,
-    breakpoints:{
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
 
-        640:{
-          slidesPerView:2
+        640: {
+            slidesPerView: 2
         },
-        768:{
-          slidesPerView:2
+        768: {
+            slidesPerView: 2
         },
-        1024:{
-            slidesPerView:3
+        1024: {
+            slidesPerView: 3
         },
-        1100:{
-          slidesPerView:4
+        1100: {
+            slidesPerView: 4
         },
-        
-      },
-     
+
+    },
+
 }
 
-export const useCaseHardwareSwiperSetting={
-    slidesPerView:1,
-    spaceBetween:20,
-    breakpoints:{
+export const useCaseHardwareSwiperSetting = {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
 
-        640:{
-          slidesPerView:1
+        640: {
+            slidesPerView: 1
         },
-        768:{
-          slidesPerView:1
+        768: {
+            slidesPerView: 1
         },
-        1024:{
-            slidesPerView:1.5
+        1024: {
+            slidesPerView: 1.5
         },
-        1100:{
-          slidesPerView:2
+        1100: {
+            slidesPerView: 2
         },
-        1250:{
-            slidesPerView:2
+        1250: {
+            slidesPerView: 2
         },
-        1400:{
-            slidesPerView:2.5
+        1400: {
+            slidesPerView: 2.5
         }
-        
-      },
+
+    },
 }
 
 
 export const footerSecures = {
-    "PRODUCT":[
+    "PRODUCT": [
         {
-            id:'pro001',
-            name:'Network',
-            url:'/'
+            id: 'pro001',
+            name: 'Network',
+            url: '/'
         },
         {
-            id:'pro002',
-            name:'Locations',
-            url:'/locations'
+            id: 'pro002',
+            name: 'Locations',
+            url: '/locations'
         },
         {
-            id:'pro003',
-            name:'DDoS Protection',
-            url:'ddosProtection'
+            id: 'pro003',
+            name: 'DDoS Protection',
+            url: 'ddosProtection'
         },
         {
-            id:'pro004',
-            name:'Client Exprience',
-            url:'/'
+            id: 'pro004',
+            name: 'Client Exprience',
+            url: '/'
         },
         {
-            id:'pro005',
-            name:'Clent Reviews',
-            url:'/Reviews'
+            id: 'pro005',
+            name: 'Clent Reviews',
+            url: '/Reviews'
         },
         {
-            id:'pro006',
-            name:'Pricing',
-            url:'/pricing'
+            id: 'pro006',
+            name: 'Pricing',
+            url: '/pricing'
         }
     ],
-    "USE CASES":[
+    "USE CASES": [
         {
-            id:'case001',
-            name:'Video Streaming',
-            url:'/'
+            id: 'case001',
+            name: 'Video Streaming',
+            url: '/'
         },
         {
-            id:'case002',
-            name:'Gaming Companies',
-            url:'/'
+            id: 'case002',
+            name: 'Gaming Companies',
+            url: '/'
         },
         {
-            id:'case003',
-            name:'VPN Providers',
-            url:'/'
+            id: 'case003',
+            name: 'VPN Providers',
+            url: '/'
         },
         {
-            id:'case004',
-            name:'Content Delivery',
-            url:'/'
+            id: 'case004',
+            name: 'Content Delivery',
+            url: '/'
         },
         {
-            id:'case005',
-            name:'Use Case Overview',
-            url:'/'
+            id: 'case005',
+            name: 'Use Case Overview',
+            url: '/'
         }
     ],
-    "RESOURCES":[
+    "RESOURCES": [
         {
-            id:'reso001',
-            name:'Looking Glass',
-            url:'/'
+            id: 'reso001',
+            name: 'Looking Glass',
+            url: '/'
         },
         {
-            id:'reso002',
-            name:'Server Hardware',
-            url:'/'
+            id: 'reso002',
+            name: 'Server Hardware',
+            url: '/'
         },
         {
-            id:'reso003',
-            name:'Compare Providers',
-            url:'/'
+            id: 'reso003',
+            name: 'Compare Providers',
+            url: '/'
         },
         {
-            id:'reso004',
-            name:'FAQ',
-            url:'/faq'
+            id: 'reso004',
+            name: 'FAQ',
+            url: '/faq'
         },
         {
-            id:'reso005',
-            name:'API',
-            url:'/api'
+            id: 'reso005',
+            name: 'API',
+            url: '/api'
         }
     ],
-    "COMPANY":[
+    "COMPANY": [
         {
-            id:'comp001',
-            name:'Contact',
-            url:'/contact'
+            id: 'comp001',
+            name: 'Contact',
+            url: '/contact'
         },
         {
-            id:'comp002',
-            name:'About DataPacket',
-            url:'/'
+            id: 'comp002',
+            name: 'About DataPacket',
+            url: '/'
         },
         {
-            id:'comp003',
-            name:'Blog',
-            url:'/ '
+            id: 'comp003',
+            name: 'Blog',
+            url: '/ '
         }
     ],
-    "GET IN TOUCH":{
-        mail:'sales@8meta.com',
-        contactNum:['+44 11 2222 3333','+1 222 333 4444'],
-        socialMedia:[
+    "GET IN TOUCH": {
+        mail: 'sales@8meta.com',
+        contactNum: ['+44 11 2222 3333', '+1 222 333 4444'],
+        socialMedia: [
             {
-                title:'Facebook',
-                icon:RiFacebookCircleFill
+                title: 'Facebook',
+                icon: RiFacebookCircleFill
             },
             {
-                title:'Twitter',
-                icon:RiTwitterFill
+                title: 'Twitter',
+                icon: RiTwitterFill
             },
             {
-                title:'Github',
-                icon:RiGithubFill
+                title: 'Github',
+                icon: RiGithubFill
             }
         ]
     }
@@ -411,101 +415,189 @@ export const useCaseFeatures = [
 
 export const hardwares = [
     {
-        id:'hard001',
-        hardwareName:'1 x Interl E-2336',
-        hardwareSerice:'Intel Xeon E-2336',
-        hardwareLine:'Rocket Lake',
-        hardwareCache:'12 MB Intel Smart Cache',
-        hardwareGhz:'2.9 GHz (4.8 GHz turbo)',
-        hardwareConfig:{
-            cores:'6 Cores',
-            threads:'12 Threads',
-            ghz:'2.9 Ghz'
+        id: 'hard001',
+        hardwareName: '1 x Interl E-2336',
+        hardwareSerice: 'Intel Xeon E-2336',
+        hardwareLine: 'Rocket Lake',
+        hardwareCache: '12 MB Intel Smart Cache',
+        hardwareGhz: '2.9 GHz (4.8 GHz turbo)',
+        hardwareConfig: {
+            cores: '6 Cores',
+            threads: '12 Threads',
+            ghz: '2.9 Ghz'
         },
-        hardwareImg:'/images/hardwares/intelSilver.png',
-        hardwareRams:[
+        hardwareImg: '/images/hardwares/intelSilver.png',
+        hardwareRams: [
             {
-                name:'Ram',
-                config:'256 GB Ram'
+                name: 'Ram',
+                config: '256 GB Ram'
             },
             {
-                name:'Storage',
-                config:'2 * 512 GB SSD'
+                name: 'Storage',
+                config: '2 * 512 GB SSD'
             },
             {
-                name:'Uplink',
-                config:'1 - 40 Gbps'
+                name: 'Uplink',
+                config: '1 - 40 Gbps'
             }
         ],
-        tag:'POPULAR',
-        status:'In Stock',
-        price:174,
-        duration:1,
+        tag: 'POPULAR',
+        status: 'In Stock',
+        price: 174,
+        duration: 1,
 
     },
     {
-        id:'hard002',
-        hardwareName:'1 × AMD EPYC 7443P',
-        hardwareSerice:'Raizen AMD EPYC-7443P',
-        hardwareLine:'AMD',
-        hardwareCache:'',
-        hardwareGhz:'2.85 Ghz',
-        hardwareConfig:{
-            cores:'24 Cores',
-            threads:'48 Threads',
-            ghz:'2.85 Ghz'
+        id: 'hard002',
+        hardwareName: '1 × AMD EPYC 7443P',
+        hardwareSerice: 'Raizen AMD EPYC-7443P',
+        hardwareLine: 'AMD',
+        hardwareCache: '',
+        hardwareGhz: '2.85 Ghz',
+        hardwareConfig: {
+            cores: '24 Cores',
+            threads: '48 Threads',
+            ghz: '2.85 Ghz'
         },
-        hardwareImg:'/images/hardwares/amdepyc.png',
-        hardwareRams:[
+        hardwareImg: '/images/hardwares/amdepyc.png',
+        hardwareRams: [
             {
-                name:'Ram',
-                config:'256 GB Ram'
+                name: 'Ram',
+                config: '256 GB Ram'
             },
             {
-                name:'Storage',
-                config:'2 * 4 TB NVMe'
+                name: 'Storage',
+                config: '2 * 4 TB NVMe'
             },
             {
-                name:'Uplink',
-                config:'20 or 40 Gbps'
+                name: 'Uplink',
+                config: '20 or 40 Gbps'
             }
         ],
-        tag:'POPULAR',
-        status:'In Stock',
-        price:180,
-        duration:1
+        tag: 'POPULAR',
+        status: 'In Stock',
+        price: 180,
+        duration: 1
     },
     {
-        id:'hard003',
-        hardwareName:'2 x Intel Silver 4316',
-        hardwareSerice:'Intel Sliver-4316',
-        hardwareLine:'Rocket Lake',
-        hardwareCache:'26',
-        hardwareGhz:'2.3 Ghz',
-        hardwareConfig:{
-            cores:'40 Cores',
-            threads:'80 Threads',
-            ghz:'2.3 Ghz'
+        id: 'hard003',
+        hardwareName: '2 x Intel Silver 4316',
+        hardwareSerice: 'Intel Sliver-4316',
+        hardwareLine: 'Rocket Lake',
+        hardwareCache: '26',
+        hardwareGhz: '2.3 Ghz',
+        hardwareConfig: {
+            cores: '40 Cores',
+            threads: '80 Threads',
+            ghz: '2.3 Ghz'
         },
-        hardwareImg:'/images/hardwares/intelSilver.png',
-        hardwareRams:[
+        hardwareImg: '/images/hardwares/intelSilver.png',
+        hardwareRams: [
             {
-                name:'Ram',
-                config:'256 GB Ram'
+                name: 'Ram',
+                config: '256 GB Ram'
             },
             {
-                name:'Storage',
-                config:'2 * 512 GB SSD'
+                name: 'Storage',
+                config: '2 * 512 GB SSD'
             },
             {
-                name:'Uplink',
-                config:'1 - 40 Gbps'
+                name: 'Uplink',
+                config: '1 - 40 Gbps'
             }
         ],
-        tag:'POPULAR',
-        status:'On Request',
-        price:174,
-        duration:1
+        tag: 'POPULAR',
+        status: 'On Request',
+        price: 174,
+        duration: 1
     },
-   
+
+]
+
+
+export const FAQs = [
+    {
+        name: 'Pricing',
+        icon:RiMoneyDollarCircleLine ,
+        questions: [
+            {
+                question: `Can i use the full capacity of my server's uplink?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+            {
+                question: `What’s the difference between a bandwidth plan and uplink capacity?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+            {
+                question: `How do you charge for bandwidth?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `How do I upgrade/downgrade my bandwidth plan?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `What if I use more bandwidth than I paid for?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `Can I get billed based on the 95th percentile rather than peak bandwidth usage?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+
+        ]
+    },
+    {
+        name: 'Security',
+        icon: MdOutlineSecurity,
+        questions: [
+            {
+                question: `Can i use the full capacity of my server's uplink?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+            {
+                question: `What’s the difference between a bandwidth plan and uplink capacity?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+            {
+                question: `How do you charge for bandwidth?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `How do I upgrade/downgrade my bandwidth plan?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `What if I use more bandwidth than I paid for?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `Can I get billed based on the 95th percentile rather than peak bandwidth usage?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+
+        ]
+    },
+    {
+        name: 'Support',
+        icon: HiOutlineSupport,
+        questions: [
+            {
+                question: `Can i use the full capacity of my server's uplink?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+            {
+                question: `What’s the difference between a bandwidth plan and uplink capacity?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+            {
+                question: `How do you charge for bandwidth?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `How do I upgrade/downgrade my bandwidth plan?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `What if I use more bandwidth than I paid for?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            }, {
+                question: `Can I get billed based on the 95th percentile rather than peak bandwidth usage?`,
+                answer: `Absolutely. Each 8meta server is deployed with unshared uplink dedicated exclusively to you. Uplink capacity varies depending of your desired CPU and bandwidth choice or custom NIC on demand. We currently offer 1×10, 2×10, 1×25, 2×25, 1×40, 2×40, 1×100 or 2×100 GE unshared uplinks.`
+            },
+
+        ]
+    }
 ]
