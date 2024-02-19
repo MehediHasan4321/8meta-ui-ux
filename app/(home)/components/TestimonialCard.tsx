@@ -1,22 +1,24 @@
 import { Testimonial } from '@/types';
 import Image from 'next/image';
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
 
 interface TestimonialCardProps {
-    card: Testimonial
+    card: Testimonial,
+    className?:string
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ card }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ card,className }) => {
     const { employeePosition, logo, name, review, avater } = card
     
     return (
-        <div className='w-full xl:w-[540px] min-h-fit bg-neutral-950 text-white p-[70px] flex flex-col gap-y-10 justify-start rounded-lg '>
+        <div className={twMerge(`w-full xl:w-[540px] min-h-fit bg-neutral-950 text-white px-[40px] pt-[40px] lg:p-[70px] flex flex-col gap-y-10 justify-start rounded-lg `,className)}>
             <div className=''>
                 <Image src={logo} alt='logo' height={130} width={130} />
             </div>
             <div>
-                <p className='text-lg'>{review}</p>
+                <p className='text-sm lg:text-lg'>{review}</p>
             </div>
             <div className='flex flex-row gap-x-4 items-center'>
                 <div className='w-[80px] h-[80px] rounded-full border-[1px] border-borderColor overflow-hidden'>

@@ -21,10 +21,10 @@ const Testimonials = () => {
 
                 <Swiper
                     {...swiperSettings}
-                    className='relative min-h-[80vh]'
+                    className='relative min-h-[80vh] lg:min-h-[90vh] 2xl:min-h-[80vh]'
                 >
                     {
-                        testimonials.map(item => <SwiperSlide className='absolute top-20 md:top-48' key={item.id}>
+                        testimonials.map(item => <SwiperSlide className='absolute top-[150px] md:top-48' key={item.id}>
                             <TestimonialCard card={item} />
                         </SwiperSlide>)
                     }
@@ -43,9 +43,9 @@ const Testimonials = () => {
             </div>
 
 
-            <div className='flex flex-col gap-3 md:flex-row items-center'>
+            <div className='flex flex-col gap-3 md:flex-row items-center px-2'>
                 <div className='w-full md:w-1/2'>
-                    <p className='text-[14px] md:text-[18px] text-center md:text-left font-semibold'>Ranked among the top server providers in the industry on:</p>
+                    <p className='text-[12px] lg:text-[15px] xl:text-lg text-center md:text-left font-semibold'>Ranked among the top server providers in the industry on:</p>
                 </div>
                 <div className='flex flex-row gap-x-10 items-center'>
                     <div className='flex flex-row gap-x-4 items-center'>
@@ -80,9 +80,9 @@ const SwiperHeader = () => {
 
     return (
         <div className='w-full flex justify-center md:justify-between items-center'>
-            <div className='flex  flex-col gap-y-4'>
-                <h1 className='text-4xl lg:text-6xl font-semibold '>Why clients appreciate</h1>
-                <h1 className='text-4xl lg:text-6xl font-semibold'>working with <span className='text-primary'>8meta ?</span></h1>
+            <div className='flex  flex-col gap-y-4 text-center md:text-left'>
+                <h1 className='text-[30px] md:text-4xl lg:text-6xl font-semibold '>Why clients appreciate</h1>
+                <h1 className='text-[30px] md:text-4xl lg:text-6xl font-semibold'>working with <span className='text-primary'>8meta ?</span></h1>
             </div>
             <div className='hidden md:flex'>
                 <SwiperButton />

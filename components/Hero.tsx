@@ -1,5 +1,6 @@
 'use client'
 import ServerClient from '@/app/(home)/components/ServerClient';
+import Loading from '@/app/(home)/loading';
 import { Clients } from '@/constants';
 import Image from 'next/image';
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -59,6 +60,8 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+
+       
 
     );
 };

@@ -13,7 +13,7 @@ interface SectionImageProps {
 const SectionImage: React.FC<SectionImageProps> = ({ src, className, alt = 'images',children }) => {
     return (
         <div className={twMerge(`w-[290px] h-[320px]  lg:w-[370px] lg:h-[400px] xl:w-[450px] xl:h-[470px] 2xl:w-[510px] 2xl:h-[530px] relative`, className)}>
-            <Image src={src} className={twMerge(`w-full h-full absolute object-cover z-20`)} fill alt={alt} />
+            <Image src={src} className={twMerge(`w-full h-full absolute z-20`)} fill alt={alt} />
             <div className='top-0 left-0 absolute w-full h-full z-10'>
                 <div className='relative w-full h-full'>
                 {children}

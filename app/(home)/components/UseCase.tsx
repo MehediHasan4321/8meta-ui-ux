@@ -4,9 +4,11 @@ import { useCases } from '@/constants';
 import React from 'react';
 import UseCaseCart from './UseCaseCart';
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useRouter } from 'next/navigation';
 
 
 const UseCase = () => {
+    const router = useRouter()
     return (
         <div className='container mx-auto flex flex-col gap-y-5 my-10'>
             <div className='flex flex-col justify-center items-center gap-y-6 '>
@@ -20,9 +22,11 @@ const UseCase = () => {
             </div>
             <div className='flex justify-center w-full'>
 
-                {/* TODO: add a handeler to redirect to all usecases page */}
                 
-                <button className='text-primary text-lg font-semibold py-3 border-b-2 border-primary flex items-center gap-x-3'>
+                
+                <button
+                onClick={()=>router.push('/useCase')}
+                className='text-primary text-lg font-semibold py-3 border-b-2 border-primary flex items-center gap-x-3'>
                     See All Use Case
                     <MdKeyboardArrowRight size={25}/>
                 </button>

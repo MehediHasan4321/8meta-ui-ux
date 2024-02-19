@@ -39,7 +39,7 @@ const NetworkSection = () => {
 
     return (
         <SectionDivider className='w-full flex flex-col md:flex-row md:items-center md:justify-between'>
-            <div className='w-full md:w-1/2 flex justify-end xl:justify-center items-center p-2 md:p-4 lg:px-6 relative order-2 md:order-1 my-20 md:my-0'>
+            <div className='w-full md:w-1/2 flex justify-end xl:justify-center items-center p-2 md:p-4 lg:px-6 order-2 md:order-1 my-20 md:my-0'>
                 <SectionImage className='z-10' src='/images/network-bitmap.png' alt='heareware-bitmap'>
 
 
