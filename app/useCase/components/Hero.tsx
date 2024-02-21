@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className='w-full md:w-1/2 lg:w-2/5 flex flex-col md:ml-3 md:-mt-32 bg-transparent'>
                     <div className='text-center md:text-left text-4xl xl:text-5xl 2xl:text-6xl space-y-2 font-semibold text-white '>
                         <h1>Build Your <span className='text-primary'>CDN</span></h1>
-                        <h1>on 8 Meta's</h1>
+                        <h1>on 8 Meta,s</h1>
                         <h1>infrastructure</h1>
                     </div>
                     <div className='mt-8 z-10'>

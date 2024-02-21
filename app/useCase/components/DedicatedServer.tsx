@@ -47,7 +47,7 @@ const DedicatedServer = () => {
                     <h1><span className='text-primary'>Dedicated</span> Server</h1>
                 </SectionHeading>
                 <SectionPara>
-                    'If your use case requires a specific CPU model or any other piece of hardware that’s not <span onClick={()=>router.push('/')} className='text-primary hover:cursor-pointer hover:underline'>listed on our website,</span> we’re happy to build a custom server for you, quickly and affordably.'
+                    <p>If your use case requires a specific CPU model or any other piece of hardware that s not <span onClick={()=>router.push('/')} className='text-primary hover:cursor-pointer hover:underline'>listed on our website,</span> we re happy to build a custom server for you, quickly and affordably.</p>
                 </SectionPara>
             </div>
         </SectionDivider>

@@ -377,7 +377,7 @@ export const menus = [
             {
                 name: 'Built-in DDoS protection',
                 icon: MdOutlineSecurity,
-                url: ''
+                url: '/'
             },
             {
                 name: 'Latest hardware',
