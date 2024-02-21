@@ -1,10 +1,9 @@
-import SectionImage from '@/app/(home)/components/SectionImage';
-import SectionDivider from '@/components/SectionDivider';
-import SectionHeading from '@/components/SectionHeading';
-import SectionPara from '@/components/SectionPara';
 import IconPointer from '@/components/share/IconPointer';
 
-import React from 'react';
+import SectionDivider from '@/components/share/SectionDivider';
+import SectionHeading from '@/components/share/SectionHeading';
+import SectionPara from '@/components/share/SectionPara';
+import SectionImage from '../home/SectionImage';
 
 const DedicatedManager = () => {
     return (

@@ -1,8 +1,8 @@
 'use client'
 import React from 'react';
-import MenuBar from '@/components/MenuBar'
-import ContactBar from './ContactBar';
-import Footer from './footer/Footer';
+import ContactBar from '../header/ContactBar';
+import Footer from '../footer/Footer';
+import MenuBar from '../header/MenuBar';
 
 
 

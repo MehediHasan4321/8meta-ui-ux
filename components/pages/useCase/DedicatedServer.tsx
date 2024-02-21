@@ -1,10 +1,10 @@
 'use client'
 
-import SectionImage from '@/app/(home)/components/SectionImage';
-import SectionDivider from '@/components/SectionDivider';
-import SectionHeading from '@/components/SectionHeading';
-import SectionPara from '@/components/SectionPara';
+import SectionImage from '@/components/pages/home/SectionImage';
 import IconPointer from '@/components/share/IconPointer';
+import SectionDivider from '@/components/share/SectionDivider';
+import SectionHeading from '@/components/share/SectionHeading';
+import SectionPara from '@/components/share/SectionPara';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaServer } from 'react-icons/fa';

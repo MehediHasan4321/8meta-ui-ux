@@ -1,6 +1,6 @@
-import SectionDivider from '@/components/SectionDivider';
-import SectionHeading from '@/components/SectionHeading';
-import SectionPara from '@/components/SectionPara';
+import SectionDivider from '@/components/share/SectionDivider';
+import SectionHeading from '@/components/share/SectionHeading';
+import SectionPara from '@/components/share/SectionPara';
 import React from 'react';
 
 const Contents = () => {

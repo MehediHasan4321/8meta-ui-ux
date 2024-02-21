@@ -1,11 +1,9 @@
 import React from 'react';
-import Loading from '../(home)/loading';
+import PageLoading from '@/components/share/PageLoading';
 
 const loading = () => {
     return (
-        <div>
-            <Loading/>
-        </div>
+        <PageLoading/>
     );
 };
 

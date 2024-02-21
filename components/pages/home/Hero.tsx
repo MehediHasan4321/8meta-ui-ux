@@ -1,6 +1,5 @@
 'use client'
-import ServerClient from '@/app/(home)/components/ServerClient';
-import Loading from '@/app/(home)/loading';
+import ServerClient from '@/components/pages/home/ServerClient';
 import { Clients } from '@/constants';
 import Image from 'next/image';
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -43,7 +42,7 @@ const Hero = () => {
 
                             <div className='flex flex-row flex-wrap justify-center md:justify-start md:flex-nowrap gap-y-3 md:gap-y-0 xl:gap-x-[30px] 2xl:gap-x-[50px] mt-[30px]'>
                                 {
-                                    Clients.map(client => <ServerClient key={client.src} src={client.src} />)
+                                    Clients.slice(0,4).map(client => <ServerClient key={client.src} src={client.src} />)
                                 }
                             </div>
                         </div>

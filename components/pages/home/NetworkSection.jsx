@@ -1,17 +1,23 @@
 'use client'
-import SectionDivider from '@/components/SectionDivider';
-import SectionHeading from '@/components/SectionHeading';
-import SectionPara from '@/components/SectionPara';
-import SectionTitle from '@/components/SectionTitle';
-import Button from '@/components/ui/Button';
-import SectionTextPointer from './SectionTextPointer';
-import { IoIosArrowForward } from 'react-icons/io';
-import { AiOutlineGlobal } from "react-icons/ai";
+
 import { FiShare2 } from "react-icons/fi";
-import IconPointer from '@/components/share/IconPointer';
+import { FaConnectdevelop } from "react-icons/fa6";
 import { GiAerialSignal } from "react-icons/gi";
-import { FaConnectdevelop } from "react-icons/fa";
-import SectionImage from './SectionImage';
+import { IoIosArrowForward } from "react-icons/io";
+import { AiOutlineGlobal } from "react-icons/ai";
+
+
+import SectionDivider from "@/components/share/SectionDivider";
+import SectionTitle from "@/components/share/SectionTitle";
+import SectionHeading from "@/components/share/SectionHeading";
+import IconPointer from "@/components/share/IconPointer";
+import SectionImage from "./SectionImage";
+import SectionTextPointer from "./SectionTextPointer";
+import Button from "@/components/ui/Button";
+import SectionPara from "@/components/share/SectionPara";
+
+
+
 
 
 

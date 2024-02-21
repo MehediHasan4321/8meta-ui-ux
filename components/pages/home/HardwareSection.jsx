@@ -1,16 +1,15 @@
 'use client'
 import React from 'react';
-import SectionDivider from '@/components/SectionDivider';
-import SectionTitle from '@/components/SectionTitle';
-import Image from 'next/image';
-import SectionHeading from '@/components/SectionHeading';
+import SectionTitle from '@/components/share/SectionTitle';
+import SectionHeading from '@/components/share/SectionHeading';
 import Button from '@/components/ui/Button';
 import { IoIosArrowForward } from "react-icons/io";
 import SectionTextPointer from './SectionTextPointer';
 import { FaServer } from "react-icons/fa6";
-import SectionPara from '@/components/SectionPara';
+import SectionPara from '@/components/share/SectionPara';
 import IconPointer from '@/components/share/IconPointer';
 import SectionImage from './SectionImage';
+import SectionDivider from '@/components/share/SectionDivider';
 
 const HardwareSection = () => {
 

@@ -1,13 +1,13 @@
 'use client'
 import React, { useMemo, useState } from 'react';
-import SectionDivider from './SectionDivider';
-import SectionHeading from './SectionHeading';
-import Input from './ui/Input';
+import Input from '../ui/Input';
 import { FAQs } from '@/constants';
-import FAQButton from './ui/FAQButton';
+import FAQButton from '../ui/FAQButton';
 import { Accordion } from 'react-accessible-accordion';
 import { arrToObj } from '@/utils/index'
-import AccordionQus from './ui/AccordionQus';
+import AccordionQus from '../ui/AccordionQus';
+import SectionDivider from './SectionDivider';
+import SectionHeading from './SectionHeading';
 
 const FAQSection = () => {
 

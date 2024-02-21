@@ -1,16 +1,12 @@
 'use client'
 
+import PageError from "@/components/share/PageError"
 
-import React from 'react';
 
-const error = () => {
- 
-    return (
-        <div >
-            Error
-            <button   className='bg-primary text-white px-6 py-2 rounded-md font-semibold'>Refresh</button>
-        </div>
-    );
-};
+const Error = ()=>{
+    return(
+        <PageError url="/"/>
+    )
+}
 
-export default error;
+export default Error

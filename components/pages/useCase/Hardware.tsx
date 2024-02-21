@@ -1,12 +1,13 @@
 'use client'
-import SectionDivider from '@/components/SectionDivider';
-import SectionHeading from '@/components/SectionHeading';
-import SectionPara from '@/components/SectionPara';
+
 import Button from '@/components/ui/Button';
 import { hardwares, useCaseHardwareSwiperSetting } from '@/constants';
 import React from 'react';
 import HardwareCard from './HardwareCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SectionDivider from '@/components/share/SectionDivider';
+import SectionHeading from '@/components/share/SectionHeading';
+import SectionPara from '@/components/share/SectionPara';
 
 const Hardware = () => {
     return (

@@ -1,18 +1,21 @@
 'use client'
-import SectionDivider from '@/components/SectionDivider';
-import SectionHeading from '@/components/SectionHeading';
-import SectionPara from '@/components/SectionPara';
-import SectionTitle from '@/components/SectionTitle';
-import Image from 'next/image';
+
 import React from 'react';
-import SectionTextPointer from './SectionTextPointer';
 import { IoIosArrowForward } from 'react-icons/io';
-import Button from '@/components/ui/Button';
 import { IoDiamondOutline } from "react-icons/io5";
 import { LuRadioTower } from "react-icons/lu";
 import { FaServer } from "react-icons/fa";
+
+
 import IconPointer from '@/components/share/IconPointer';
+import SectionDivider from '@/components/share/SectionDivider';
+import SectionTitle from '@/components/share/SectionTitle';
+import SectionHeading from '@/components/share/SectionHeading';
+import SectionPara from '@/components/share/SectionPara';
+import SectionTextPointer from './SectionTextPointer';
+import Button from '@/components/ui/Button';
 import SectionImage from './SectionImage';
+
 
 
 const ServiceSection = () => {

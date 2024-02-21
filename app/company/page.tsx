@@ -1,7 +1,10 @@
+import Hero from "../../components/pages/company/hero"
+
+
 const Page = () => {
     return (
         <>
-            <h1 className="text-7xl font-semibold text-center">Company</h1>
+            <Hero/>
         </>
     )
 }

@@ -25,6 +25,12 @@ export const Clients = [
     {
         src: '/images/client/client-4.png'
     },
+    {
+        src: '/images/client/client-1.png'
+    },
+    {
+        src: '/images/client/client-2.png'
+    },
 
 ]
 
@@ -363,28 +369,30 @@ export const menus = [
         url: '/pricing'
     }, {
         name: 'Company',
-        subMenu: [
-            {
-                name: 'Premume Network',
-                icon: MdNetworkCheck,
-                url: '/'
-            },
-            {
-                name: 'Exceptional client service',
-                icon: IoDiamondOutline,
-                url: '/'
-            },
-            {
-                name: 'Built-in DDoS protection',
-                icon: MdOutlineSecurity,
-                url: '/'
-            },
-            {
-                name: 'Latest hardware',
-                icon: GrStorage,
-                url: '/'
-            }
-        ]
+        url:'/company',
+        subMenu:[]
+        // subMenu: [
+        //     {
+        //         name: 'Premume Network',
+        //         icon: MdNetworkCheck,
+        //         url: '/'
+        //     },
+        //     {
+        //         name: 'Exceptional client service',
+        //         icon: IoDiamondOutline,
+        //         url: '/'
+        //     },
+        //     {
+        //         name: 'Built-in DDoS protection',
+        //         icon: MdOutlineSecurity,
+        //         url: '/'
+        //     },
+        //     {
+        //         name: 'Latest hardware',
+        //         icon: GrStorage,
+        //         url: '/'
+        //     }
+        // ]
     }
 ]
 

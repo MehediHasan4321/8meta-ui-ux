@@ -1,23 +1,24 @@
-import Hero from "@/components/Hero";
-import ServiceSection from '@/app/(home)/components/ServiceSection'
-import HardwareSection from '@/app/(home)/components/HardwareSection'
-import NetworkSection from '@/app/(home)/components/NetworkSection'
+'use client'
+import Hero from "@/components/pages/home/Hero";
 import TrustedClients from "@/components/share/TrustedClients";
-import UseCase from "./components/UseCase";
-import Testimonials from "./components/Testimonials";
-import DedicatedServer from "./components/DedicatedServer";
-
-
+import HardwareSection from '@/components/pages/home/HardwareSection'
+import NetworkSection from '@/components/pages/home/NetworkSection'
+import ServiceSection from '@/components/pages/home/ServiceSection'
+import UseCase from "@/components/pages/home/UseCase";
+import DedicatedServer from "@/components/pages/home/DedicatedServer";
+import Testimonials from '@/components/pages/home/Testimonials'
+import PageLoading from "@/components/share/PageLoading";
+import PageError from "@/components/share/PageError";
 const Page = () => {
     return (
         <>
             <Hero/>
-            <HardwareSection/>
+            <HardwareSection />
             <NetworkSection />
             <ServiceSection />
-            <TrustedClients/>
+            <TrustedClients length={4}/>
             <UseCase/>
-            <Testimonials />
+            <Testimonials/>
             <DedicatedServer/>
         </>
     );

@@ -4,7 +4,7 @@ import useDebounce from '@/hooks/useDebounce';
 import React, { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Submenu } from '@/types';
-import SubMenu from '@/app/(home)/components/SubMenu';
+import SubMenu from '@/components/header/SubMenu';
 
 interface MenuItemProps{
     name:string,

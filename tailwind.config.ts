@@ -18,7 +18,8 @@ const config: Config = {
         'hero':'url(/images/hero-background.png)',
         'heardware-gradient-bg':'url(/images/gradient-bg.png)',
         'useCase-bg':'url(/images/useCase-bg.png)',
-        'useCaseBanner':'url(/images/useCase/Banner-Usecase.png)'
+        'useCaseBanner':'url(/images/useCase/Banner-Usecase.png)',
+        'companyBannerImg':'url(/images/company/company-bitmap.png)'
       },
       
 

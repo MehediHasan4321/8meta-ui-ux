@@ -1,5 +1,6 @@
-import TestimonialCard from '@/app/(home)/components/TestimonialCard';
-import SectionDivider from '@/components/SectionDivider';
+import TestimonialCard from '@/components/pages/home/TestimonialCard';
+import SectionDivider from '@/components/share/SectionDivider';
+
 import { testimonials } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
