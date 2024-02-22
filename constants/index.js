@@ -349,7 +349,7 @@ export const menus = [
             {
                 name: 'Exceptional client service',
                 icon: IoDiamondOutline,
-                url: '/'
+                url: '/company'
             },
             {
                 name: 'Built-in DDoS protection',
