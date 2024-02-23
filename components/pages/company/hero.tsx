@@ -7,7 +7,7 @@ import ServerClient from "../home/ServerClient"
 const Hero = () => {
     return (
         
-        <Container className="h-[60vh] w-full flex flex-col ">
+        <Container className="h-[70vh] w-full flex flex-col ">
             <div className="w-full h-full flex ">
                 <div className="h-full w-3/5 flex flex-col gap-y-5 justify-center items-center">
                     <div>

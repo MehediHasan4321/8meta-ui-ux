@@ -11,7 +11,7 @@ interface PageErrorProps {
 const PageError: React.FC<PageErrorProps> = ({ url }) => {
     const router = useRouter()
     return (
-        <Container className='w-full min-h-[50vh] flex justify-center items-center border'>
+        <Container className='w-full min-h-[50vh] flex justify-center items-center'>
             <div className="w-full flex flex-col items-center gap-y-10">
                 <h1 className="text-4xl font-semibold text-center">Somethings Went Wrong!!!</h1>
                 <div>

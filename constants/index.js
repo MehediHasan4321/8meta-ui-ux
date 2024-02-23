@@ -1,3 +1,4 @@
+
 import { TfiVideoClapper } from "react-icons/tfi";
 import { MdOutlineVpnLock, MdSecurity } from "react-icons/md";
 import { IoGameController } from "react-icons/io5";
@@ -311,7 +312,9 @@ export const menus = [
                 icon: GrStorage,
                 url: '/'
             }
-        ]
+        ],
+       
+
     },
     {
         name: 'Location',
@@ -342,25 +345,16 @@ export const menus = [
         name: 'Use Cases',
         subMenu: [
             {
-                name: 'Premume Network',
+                name: 'Use Case',
                 icon: MdNetworkCheck,
                 url: '/useCase'
             },
             {
-                name: 'Exceptional client service',
+                name: 'Company',
                 icon: IoDiamondOutline,
                 url: '/company'
             },
-            {
-                name: 'Built-in DDoS protection',
-                icon: MdOutlineSecurity,
-                url: ''
-            },
-            {
-                name: 'Latest hardware',
-                icon: GrStorage,
-                url: '/'
-            }
+            
         ]
     },
     {
@@ -371,28 +365,7 @@ export const menus = [
         name: 'Company',
         url:'/company',
         subMenu:[]
-        // subMenu: [
-        //     {
-        //         name: 'Premume Network',
-        //         icon: MdNetworkCheck,
-        //         url: '/'
-        //     },
-        //     {
-        //         name: 'Exceptional client service',
-        //         icon: IoDiamondOutline,
-        //         url: '/'
-        //     },
-        //     {
-        //         name: 'Built-in DDoS protection',
-        //         icon: MdOutlineSecurity,
-        //         url: '/'
-        //     },
-        //     {
-        //         name: 'Latest hardware',
-        //         icon: GrStorage,
-        //         url: '/'
-        //     }
-        // ]
+        
     }
 ]
 
@@ -609,3 +582,65 @@ export const FAQs = [
         ]
     }
 ]
+
+
+
+export const teamMembers = [
+    {
+        name:'Jsone Doe',
+        avater:'/images/company/teams/member1.png',
+        position:'Founder & CEO',
+        socialIcon:{
+            Icon:RiTwitterFill,
+            title:'Follow him on Twiter'
+        }
+    },
+    {
+        name:'Alex james',
+        avater:'/images/company/teams/member2.png',
+        position:'Head Network architect',
+        socialIcon:{
+            Icon:RiTwitterFill,
+            title:'Follow him on Twiter'
+        }
+    },
+    {
+        name:'Jessica Stel',
+        avater:'/images/company/teams/member3.png',
+        position:'COO',
+        socialIcon:{
+            Icon:RiTwitterFill,
+            title:'Follow him on Twiter'
+        }
+    },
+    {
+        name:'Harry Doe',
+        avater:'/images/company/teams/member4.png',
+        position:'Developer',
+        socialIcon:{
+            Icon:RiTwitterFill,
+            title:'Follow him on Twiter'
+        }
+    }
+]
+
+export const teamMembersSwiperSetting = {
+    slidesPerView:1,
+    spaceBetween:30,
+    breakpoints: {
+
+        640: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 1
+        },
+        1024: {
+            slidesPerView: 2
+        },
+        1100: {
+            slidesPerView: 3.5
+        },
+
+    },
+}

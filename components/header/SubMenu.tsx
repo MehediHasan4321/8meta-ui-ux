@@ -1,5 +1,6 @@
 `use client`
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useMemo } from "react";
 import { IconType } from "react-icons";
 
 
@@ -15,6 +16,10 @@ interface SubMenuProps{
 
 const SubMenu:React.FC<SubMenuProps> = ({ name, icon: Icon, url, index, length=0 }) => {
     const router = useRouter()
+    const pathName = usePathname()
+    
+
+   
     return (
         <div
             onClick={()=>router.push(url)}

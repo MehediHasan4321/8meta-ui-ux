@@ -12,7 +12,8 @@ const config: Config = {
         primary: '#00A19C',
         primaryAcent:'#1f6867',
         secondary: '#CCCDCD',
-        borderColor:'#004B49'
+        borderColor:'#004B49',
+        blackAcent:'#0c1514'
       },
       backgroundImage:{
         'hero':'url(/images/hero-background.png)',

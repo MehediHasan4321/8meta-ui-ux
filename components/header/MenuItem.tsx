@@ -1,21 +1,37 @@
 `use client`
 
 import useDebounce from '@/hooks/useDebounce';
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Submenu } from '@/types';
 import SubMenu from '@/components/header/SubMenu';
+import { usePathname } from 'next/navigation';
 
 interface MenuItemProps{
     name:string,
-    subMenu:Submenu[],
+    subMenu?:Submenu[],
     index:number,
     lastMenu:number
 }
 
 
-const MenuItem:React.FC<MenuItemProps> = ({ name, subMenu, index,lastMenu }) => {
+const MenuItem:React.FC<MenuItemProps> = ({ name, subMenu=[], index,lastMenu }) => {
     const [show, setShow] = useState(false)
+    const [isActiveRoute,setIsActiveRoute] = useState<boolean>(false)
+    const pathName = usePathname()
+
+
+    useEffect(()=>{
+         const isFind = subMenu.filter(url=> url.url=== pathName)
+         if(isFind.length > 0){
+            setIsActiveRoute(true)
+         }else{
+            setIsActiveRoute(false)
+         }
+    },[pathName,subMenu])
+
+  
+  
 
     //This hooks return value after your provided time
     const debounceValue = useDebounce(show, 200)
@@ -32,19 +48,23 @@ const MenuItem:React.FC<MenuItemProps> = ({ name, subMenu, index,lastMenu }) => 
         setShow(false)
     }
 
+    
+
     const lastIndex = lastMenu === index
     
     return (
-        <div className="relative group">
+        <div   className="relative group">
             <div
                 onMouseOver={handleShow}
                 onMouseLeave={handleRemove}
                 className="flex items-end gap-x-0 lg:gap-x-1 cursor-pointer text-secondary transition hover:text-white "
 
             >
-                <span className="text-sm md:text-md lg:text-[16px]">{name}</span>
+                <span className={isActiveRoute?`text-sm md:text-md lg:text-[16px] text-primary `:'text-sm md:text-md lg:text-[16px] text-white'}>{name}</span>
                 {subMenu.length>0&&<MdKeyboardArrowDown size={20} className={debounceValue ? `rotate-1 transition-all duration-200` : '-rotate-90 transition-all duration-200'} />}
             </div>
+
+
             <div
                 onMouseOver={() => setShow(true)}
                 onMouseLeave={() => setShow(false)}

@@ -41,6 +41,7 @@ const MenuBar = () => {
             </div>
 
             {/* This is mobile menu bar it's only visible when it is in mobile responsive */}
+
             <div className=" md:hidden">
 
                 {
@@ -49,6 +50,7 @@ const MenuBar = () => {
 
 
             </div>
+            
             <div className={isMenuBarOpen ?
                 `absolute top-16 -translate-x-2 transition ease-in-out duration-300 md:hidden min-w-[250px] min-h-[550px] bg-neutral-900 z-50 opacity-95`
                 :
