@@ -13,12 +13,13 @@ const FAQSection = () => {
 
     const [faqName, setFaqName] = useState<string>(FAQs[0].name)
     const [accordionId,setAccordionId] = useState<any>()
+
     const accordionQuestion = useMemo(() => {
         const value = arrToObj(FAQs)
         return value[faqName].questions
     }, [faqName])
 
-
+  
 
     return (
         <SectionDivider>
