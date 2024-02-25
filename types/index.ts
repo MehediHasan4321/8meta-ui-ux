@@ -46,7 +46,7 @@ export interface hardwareRam {
 }
 
 export interface hardware {
-    id: string,
+    id: string;
     hardwareName: string;
     hardwareSerice: string;
     hardwareLine: string;
@@ -55,9 +55,26 @@ export interface hardware {
     hardwareConfig: { cores: string; threads: string; ghz: string };
     hardwareImg: string;
     hardwareRams: hardwareRam[];
-    tag: string;
+    tag?: string;
     status: string;
     price: number;
-    duration: number
+    duration: number;
 
+}
+
+export interface options {
+    title?: string;
+    value: string[],
+    iconBox?: {
+        title: string,
+        Icon: IconType,
+        url?: string
+    }
+}
+
+export interface HardwareOption {
+    heading: string;
+    image: string;
+    imageHeading: string;
+    options: options[]
 }

@@ -9,6 +9,8 @@ import { IoDiamondOutline } from "react-icons/io5";
 import { MdOutlineSecurity } from "react-icons/md";
 import { GrStorage } from "react-icons/gr";
 import { HiOutlineSupport } from "react-icons/hi";
+import { HiOutlineArrowPathRoundedSquare } from "react-icons/hi2";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 
 
@@ -310,7 +312,7 @@ export const menus = [
             {
                 name: 'Latest hardware',
                 icon: GrStorage,
-                url: '/'
+                url: '/hardware'
             }
         ],
        
@@ -433,7 +435,7 @@ export const hardwares = [
         hardwareName: '1 × AMD EPYC 7443P',
         hardwareSerice: 'Raizen AMD EPYC-7443P',
         hardwareLine: 'AMD',
-        hardwareCache: '',
+        hardwareCache: '12 MB Intel Smart Cache',
         hardwareGhz: '2.85 Ghz',
         hardwareConfig: {
             cores: '24 Cores',
@@ -465,7 +467,7 @@ export const hardwares = [
         hardwareName: '2 x Intel Silver 4316',
         hardwareSerice: 'Intel Sliver-4316',
         hardwareLine: 'Rocket Lake',
-        hardwareCache: '26',
+        hardwareCache: '26 (20 Intel Smart Cache)',
         hardwareGhz: '2.3 Ghz',
         hardwareConfig: {
             cores: '40 Cores',
@@ -492,6 +494,136 @@ export const hardwares = [
         price: 174,
         duration: 1
     },
+    {
+        id: 'hard004',
+        hardwareName: '1 × Ryzen 9 7950X3D',
+        hardwareSerice: 'Ryzen Xeon E-2336',
+        hardwareLine: 'Rocket Lake',
+        hardwareCache: '12 MB Intel Smart Cache',
+        hardwareGhz: '2.9 GHz (4.8 GHz turbo)',
+        hardwareConfig: {
+            cores: '6 Cores',
+            threads: '12 Threads',
+            ghz: '2.9 Ghz'
+        },
+        hardwareImg: '/images/hardwares/intelSilver.png',
+        hardwareRams: [
+            {
+                name: 'Ram',
+                config: '256 GB Ram'
+            },
+            {
+                name: 'Storage',
+                config: '2 * 512 GB SSD'
+            },
+            {
+                name: 'Uplink',
+                config: '1 - 40 Gbps'
+            }
+        ],
+        tag: 'NEW',
+        status: 'In Stock',
+        price: 174,
+        duration: 1,
+
+    },
+
+    {
+        id: 'hard006',
+        hardwareName: '1 x AMD EPYC 7713P',
+        hardwareSerice: 'Ryzen Xeon E-2336',
+        hardwareLine: 'Rocket Lake',
+        hardwareCache: '12 MB Intel Smart Cache',
+        hardwareGhz: '2.9 GHz (4.8 GHz turbo)',
+        hardwareConfig: {
+            cores: '6 Cores',
+            threads: '12 Threads',
+            ghz: '2.9 Ghz'
+        },
+        hardwareImg: '/images/hardwares/intelSilver.png',
+        hardwareRams: [
+            {
+                name: 'Ram',
+                config: '256 GB Ram'
+            },
+            {
+                name: 'Storage',
+                config: '2 * 512 GB SSD'
+            },
+            {
+                name: 'Uplink',
+                config: '1 - 40 Gbps'
+            }
+        ],
+        tag: '',
+        status: 'In Stock',
+        price: 174,
+        duration: 1,
+    },
+    {
+        id: 'hard007',
+        hardwareName: '1 x AMD EPYC 9754',
+        hardwareSerice: 'Ryzen Xeon E-2336',
+        hardwareLine: 'Rocket Lake',
+        hardwareCache: '12 MB Intel Smart Cache',
+        hardwareGhz: '2.9 GHz (4.8 GHz turbo)',
+        hardwareConfig: {
+            cores: '6 Cores',
+            threads: '12 Threads',
+            ghz: '2.9 Ghz'
+        },
+        hardwareImg: '/images/hardwares/intelSilver.png',
+        hardwareRams: [
+            {
+                name: 'Ram',
+                config: '256 GB Ram'
+            },
+            {
+                name: 'Storage',
+                config: '2 * 512 GB SSD'
+            },
+            {
+                name: 'Uplink',
+                config: '1 - 40 Gbps'
+            }
+        ],
+        tag: 'NEW',
+        status: 'In Stock',
+        price: 174,
+        duration: 1,
+    },
+    {
+        id: 'hard009',
+        hardwareName: '2 x AMD EPYC 9754',
+        hardwareSerice: 'Ryzen Xeon E-2336',
+        hardwareLine: 'Rocket Lake',
+        hardwareCache: '12 MB Intel Smart Cache',
+        hardwareGhz: '2.9 GHz (4.8 GHz turbo)',
+        hardwareConfig: {
+            cores: '6 Cores',
+            threads: '12 Threads',
+            ghz: '2.9 Ghz'
+        },
+        hardwareImg: '/images/hardwares/intelSilver.png',
+        hardwareRams: [
+            {
+                name: 'Ram',
+                config: '256 GB Ram'
+            },
+            {
+                name: 'Storage',
+                config: '2 * 512 GB SSD'
+            },
+            {
+                name: 'Uplink',
+                config: '1 - 40 Gbps'
+            }
+        ],
+        tag: 'NEW',
+        status: 'In Stock',
+        price: 174,
+        duration: 1,
+    }
 
 ]
 
@@ -643,4 +775,77 @@ export const teamMembersSwiperSetting = {
         },
 
     },
+}
+
+const iconBox = {
+    title:'Full Spece',
+    Icon:FaArrowUpRightFromSquare,
+    url:'/hardware'
+}
+
+export const hardwareOptions = {
+    storage:{
+        heading:'Storage Options',
+        image:'/images/hardwares/ssd.png',
+        imageHeading:'2 TB / 4 TB WD_BLACK SN850X NVMe™ SSD',
+        options:[
+            {
+                title:'NVMe SSD',
+                value:['2 TB / 4 TB - WD_BLACK SN850X'],
+                
+            },
+            {
+                title:'SATA SSD',
+                value:['500 GB - Crucial MX500','1.92 TB - Intel SSD D3-S4520 Series'],
+                
+            },
+            {
+                title:'HDD',
+                value:['2 TB / 4 TB - WD_BLACK SN850X'],
+                
+            }
+        ]
+    },
+    memeory:{
+        heading:'Memory',
+        image:'/images/hardwares/memory.png',
+        imageHeading:'Crucial 32 GB DDR5-4800',
+        options:[
+            {
+                value:['Crucial/Micron 16 GB DDR5 4800 MHz'],
+                iconBox:iconBox
+            },
+            {
+                value:['Crucial/Micron 32 GB DDR5 4800 MHz'],
+                iconBox:iconBox
+            }
+        ]
+
+    },
+    motherboard:{
+        heading:'Chassis & motherboard',
+        image:'/images/hardwares/motherboard.png',
+        imageHeading:'SuperMicro 813MFTQC-R407CB',
+        options:[
+            {
+                value:['Supermicro 1U SuperChassis','813MFTQC-R407CB'],
+                iconBox:iconBox
+            },
+            {
+                value:['ASRock B650D4U-2L2T/BCM','+ Intel® Dual port GbE LAN','+ Dedicated IPMI port'],
+                iconBox:iconBox
+            }
+        ]
+    },
+    nicCard:{
+        heading:'NIC',
+        image:'/images/hardwares/nic.png',
+        imageHeading:'Intel® 82599ES',
+        options:[
+            {
+                value:['Intel® 82599ES','10 Gbps Dual Port SFP+'],
+                iconBox:iconBox
+            }
+        ]
+    }
 }

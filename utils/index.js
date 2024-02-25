@@ -1,8 +1,4 @@
-export const arrToObj = (arr=[]) => {
-    return arr.reduce((acc, curr) => {
-        acc[curr.name] = {
-            ...curr
-        }
-        return acc
-    }, {})
+
+export const objToArr = (obj)=>{
+    return Object.keys(obj)
 }
