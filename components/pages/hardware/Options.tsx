@@ -11,7 +11,7 @@ interface OptionsProps {
 }
 
 const Options: React.FC<OptionsProps> = ({ option }) => {
-    console.log(option)
+   
     const {heading,image,imageHeading,options} = option
 
     return (

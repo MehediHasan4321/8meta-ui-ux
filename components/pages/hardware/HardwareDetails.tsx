@@ -7,7 +7,7 @@ import { hardwareOptions, hardwares } from '@/constants';
 import Image from 'next/image';
 import ActiveHardwareDetails from './ActiveHardwareDetails';
 import Options from './Options';
-import { objToArr } from '@/utils';
+
 
 
 const HardwareDetails = () => {
@@ -21,7 +21,7 @@ const HardwareDetails = () => {
         return activeHardwareDetails?.hardwareImg ? activeHardwareDetails.hardwareImg : '/images/placeholder.jpg'
     }, [activeHardwareDetails?.hardwareImg])
 
-    const arr = objToArr(hardwareOptions)
+    const arr = Object.keys(hardwareOptions)
 
 
 
