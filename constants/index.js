@@ -849,3 +849,27 @@ export const hardwareOptions = {
         ]
     }
 }
+
+
+export const hardwareProviders = [
+    {
+        name:'samsung',
+        url:'/images/hardwares/hardwareProvider/samsung.png'
+    },
+    {
+        name:'Intel',
+        url:'/images/hardwares/hardwareProvider/intel.png'
+    },
+    {
+        name:'Crucial',
+        url:'/images/hardwares/hardwareProvider/crucial.png'
+    },
+    {
+        name:'Westran',
+        url:'/images/hardwares/hardwareProvider/westran.png'
+    },
+    {
+        name:'AMD',
+        url:'/images/hardwares/hardwareProvider/amd.png'
+    }
+]
