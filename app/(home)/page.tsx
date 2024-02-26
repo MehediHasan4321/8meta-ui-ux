@@ -5,10 +5,8 @@ import HardwareSection from '@/components/pages/home/HardwareSection'
 import NetworkSection from '@/components/pages/home/NetworkSection'
 import ServiceSection from '@/components/pages/home/ServiceSection'
 import UseCase from "@/components/pages/home/UseCase";
-import DedicatedServer from "@/components/pages/home/DedicatedServer";
+import DedicatedServer from "@/components/share/DedicatedServer";
 import Testimonials from '@/components/pages/home/Testimonials'
-import PageLoading from "@/components/share/PageLoading";
-import PageError from "@/components/share/PageError";
 const Page = () => {
     return (
         <>

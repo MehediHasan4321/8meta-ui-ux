@@ -866,7 +866,7 @@ export const hardwareProviders = [
     },
     {
         name:'Westran',
-        url:'/images/hardwares/hardwareProvider/westran.png'
+        url:'/images/hardwares/hardwareProvider/westren.png'
     },
     {
         name:'AMD',
