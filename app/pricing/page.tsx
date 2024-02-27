@@ -1,7 +1,13 @@
+import Hero from "@/components/pages/pricing/Hero"
+import PriceCalculation from "@/components/pages/pricing/PriceCalculation"
+import FAQSection from "@/components/share/FAQSection"
+
 const Page = ()=>{
     return(
         <>
-        <h1 className="text-6xl text-center mt-10 ">Pricing Calculation</h1>
+            <Hero/>
+            <PriceCalculation/>
+            <FAQSection/>
         </>
     )
 }

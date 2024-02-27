@@ -3,13 +3,14 @@ import { TfiVideoClapper } from "react-icons/tfi";
 import { MdOutlineVpnLock, MdSecurity } from "react-icons/md";
 import { IoGameController } from "react-icons/io5";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { RiFacebookCircleFill, RiTwitterFill, RiGithubFill,RiMoneyDollarCircleLine } from "react-icons/ri";
+import { RiFacebookCircleFill, RiTwitterFill, RiGithubFill, RiMoneyDollarCircleLine } from "react-icons/ri";
 import { MdNetworkCheck } from "react-icons/md";
 import { IoDiamondOutline } from "react-icons/io5";
 import { MdOutlineSecurity } from "react-icons/md";
 import { GrStorage } from "react-icons/gr";
 import { HiOutlineSupport } from "react-icons/hi";
-import { HiOutlineArrowPathRoundedSquare } from "react-icons/hi2";
+import { FaDollarSign } from "react-icons/fa6";
+
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 
@@ -307,7 +308,7 @@ export const menus = [
             {
                 name: 'Built-in DDoS protection',
                 icon: MdOutlineSecurity,
-                url: ''
+                url: '/'
             },
             {
                 name: 'Latest hardware',
@@ -315,7 +316,7 @@ export const menus = [
                 url: '/hardware'
             }
         ],
-       
+
 
     },
     {
@@ -356,7 +357,12 @@ export const menus = [
                 icon: IoDiamondOutline,
                 url: '/company'
             },
-            
+            {
+                name: 'Pricing',
+                icon: FaDollarSign,
+                url: '/pricing'
+            }
+
         ]
     },
     {
@@ -365,9 +371,9 @@ export const menus = [
         url: '/pricing'
     }, {
         name: 'Company',
-        url:'/company',
-        subMenu:[]
-        
+        url: '/company',
+        subMenu: []
+
     }
 ]
 
@@ -631,7 +637,7 @@ export const hardwares = [
 export const FAQs = [
     {
         name: 'Pricing',
-        icon:RiMoneyDollarCircleLine ,
+        icon: RiMoneyDollarCircleLine,
         questions: [
             {
                 question: `Can i use the full capacity of my server's uplink?`,
@@ -719,46 +725,46 @@ export const FAQs = [
 
 export const teamMembers = [
     {
-        name:'Jsone Doe',
-        avater:'/images/company/teams/member1.png',
-        position:'Founder & CEO',
-        socialIcon:{
-            Icon:RiTwitterFill,
-            title:'Follow him on Twiter'
+        name: 'Jsone Doe',
+        avater: '/images/company/teams/member1.png',
+        position: 'Founder & CEO',
+        socialIcon: {
+            Icon: RiTwitterFill,
+            title: 'Follow him on Twiter'
         }
     },
     {
-        name:'Alex james',
-        avater:'/images/company/teams/member2.png',
-        position:'Head Network architect',
-        socialIcon:{
-            Icon:RiTwitterFill,
-            title:'Follow him on Twiter'
+        name: 'Alex james',
+        avater: '/images/company/teams/member2.png',
+        position: 'Head Network architect',
+        socialIcon: {
+            Icon: RiTwitterFill,
+            title: 'Follow him on Twiter'
         }
     },
     {
-        name:'Jessica Stel',
-        avater:'/images/company/teams/member3.png',
-        position:'COO',
-        socialIcon:{
-            Icon:RiTwitterFill,
-            title:'Follow him on Twiter'
+        name: 'Jessica Stel',
+        avater: '/images/company/teams/member3.png',
+        position: 'COO',
+        socialIcon: {
+            Icon: RiTwitterFill,
+            title: 'Follow him on Twiter'
         }
     },
     {
-        name:'Harry Doe',
-        avater:'/images/company/teams/member4.png',
-        position:'Developer',
-        socialIcon:{
-            Icon:RiTwitterFill,
-            title:'Follow him on Twiter'
+        name: 'Harry Doe',
+        avater: '/images/company/teams/member4.png',
+        position: 'Developer',
+        socialIcon: {
+            Icon: RiTwitterFill,
+            title: 'Follow him on Twiter'
         }
     }
 ]
 
 export const teamMembersSwiperSetting = {
-    slidesPerView:1,
-    spaceBetween:30,
+    slidesPerView: 1,
+    spaceBetween: 30,
     breakpoints: {
 
         640: {
@@ -778,73 +784,73 @@ export const teamMembersSwiperSetting = {
 }
 
 const iconBox = {
-    title:'Full Spece',
-    Icon:FaArrowUpRightFromSquare,
-    url:'/hardware'
+    title: 'Full Spece',
+    Icon: FaArrowUpRightFromSquare,
+    url: '/hardware'
 }
 
 export const hardwareOptions = {
-    storage:{
-        heading:'Storage Options',
-        image:'/images/hardwares/ssd.png',
-        imageHeading:'2 TB / 4 TB WD_BLACK SN850X NVMe™ SSD',
-        options:[
+    storage: {
+        heading: 'Storage Options',
+        image: '/images/hardwares/ssd.png',
+        imageHeading: '2 TB / 4 TB WD_BLACK SN850X NVMe™ SSD',
+        options: [
             {
-                title:'NVMe SSD',
-                value:['2 TB / 4 TB - WD_BLACK SN850X'],
-                
+                title: 'NVMe SSD',
+                value: ['2 TB / 4 TB - WD_BLACK SN850X'],
+
             },
             {
-                title:'SATA SSD',
-                value:['500 GB - Crucial MX500','1.92 TB - Intel SSD D3-S4520 Series'],
-                
+                title: 'SATA SSD',
+                value: ['500 GB - Crucial MX500', '1.92 TB - Intel SSD D3-S4520 Series'],
+
             },
             {
-                title:'HDD',
-                value:['2 TB / 4 TB - WD_BLACK SN850X'],
-                
+                title: 'HDD',
+                value: ['2 TB / 4 TB - WD_BLACK SN850X'],
+
             }
         ]
     },
-    memeory:{
-        heading:'Memory',
-        image:'/images/hardwares/memory.png',
-        imageHeading:'Crucial 32 GB DDR5-4800',
-        options:[
+    memeory: {
+        heading: 'Memory',
+        image: '/images/hardwares/memory.png',
+        imageHeading: 'Crucial 32 GB DDR5-4800',
+        options: [
             {
-                value:['Crucial/Micron 16 GB DDR5 4800 MHz'],
-                iconBox:iconBox
+                value: ['Crucial/Micron 16 GB DDR5 4800 MHz'],
+                iconBox: iconBox
             },
             {
-                value:['Crucial/Micron 32 GB DDR5 4800 MHz'],
-                iconBox:iconBox
+                value: ['Crucial/Micron 32 GB DDR5 4800 MHz'],
+                iconBox: iconBox
             }
         ]
 
     },
-    motherboard:{
-        heading:'Chassis & motherboard',
-        image:'/images/hardwares/motherboard.png',
-        imageHeading:'SuperMicro 813MFTQC-R407CB',
-        options:[
+    motherboard: {
+        heading: 'Chassis & motherboard',
+        image: '/images/hardwares/motherboard.png',
+        imageHeading: 'SuperMicro 813MFTQC-R407CB',
+        options: [
             {
-                value:['Supermicro 1U SuperChassis','813MFTQC-R407CB'],
-                iconBox:iconBox
+                value: ['Supermicro 1U SuperChassis', '813MFTQC-R407CB'],
+                iconBox: iconBox
             },
             {
-                value:['ASRock B650D4U-2L2T/BCM','+ Intel® Dual port GbE LAN','+ Dedicated IPMI port'],
-                iconBox:iconBox
+                value: ['ASRock B650D4U-2L2T/BCM', '+ Intel® Dual port GbE LAN', '+ Dedicated IPMI port'],
+                iconBox: iconBox
             }
         ]
     },
-    nicCard:{
-        heading:'NIC',
-        image:'/images/hardwares/nic.png',
-        imageHeading:'Intel® 82599ES',
-        options:[
+    nicCard: {
+        heading: 'NIC',
+        image: '/images/hardwares/nic.png',
+        imageHeading: 'Intel® 82599ES',
+        options: [
             {
-                value:['Intel® 82599ES','10 Gbps Dual Port SFP+'],
-                iconBox:iconBox
+                value: ['Intel® 82599ES', '10 Gbps Dual Port SFP+'],
+                iconBox: iconBox
             }
         ]
     }
@@ -853,23 +859,110 @@ export const hardwareOptions = {
 
 export const hardwareProviders = [
     {
-        name:'samsung',
-        url:'/images/hardwares/hardwareProvider/samsung.png'
+        name: 'samsung',
+        url: '/images/hardwares/hardwareProvider/samsung.png'
     },
     {
-        name:'Intel',
-        url:'/images/hardwares/hardwareProvider/intel.png'
+        name: 'Intel',
+        url: '/images/hardwares/hardwareProvider/intel.png'
     },
     {
-        name:'Crucial',
-        url:'/images/hardwares/hardwareProvider/crucial.png'
+        name: 'Crucial',
+        url: '/images/hardwares/hardwareProvider/crucial.png'
     },
     {
-        name:'Westran',
-        url:'/images/hardwares/hardwareProvider/westren.png'
+        name: 'Westran',
+        url: '/images/hardwares/hardwareProvider/westren.png'
     },
     {
-        name:'AMD',
-        url:'/images/hardwares/hardwareProvider/amd.png'
+        name: 'AMD',
+        url: '/images/hardwares/hardwareProvider/amd.png'
     }
 ]
+
+export const memoryes = [
+    {
+        memory: '16 GB',
+        price: 16
+    },
+    {
+        memory: '32 GB',
+        price: 32
+    },
+    {
+        memory: '64 GB',
+        price: 64
+    },
+    {
+        memory: '128 GB',
+        price: 128
+    }
+]
+
+export const storages = {
+    ssd:[
+        {
+            storage:'2 x 500 GB SATA SSD',
+            price:50
+        },
+        {
+            storage:'2 x 1.92 TB NVMe SSD',
+            price:100
+        },
+        {
+            storage:'2 x 3.84 TB NVMe SSD',
+            price:150
+        }
+    ],
+    hdd:[
+        {
+            storage:'2 x 500 GB SATA HDD',
+            price:25
+        }
+    ]
+}
+
+export const dataCenters = {
+    'North America':[
+        {
+            location:'Ashburn ,VA',
+            status:'4th delivery'
+        },
+        {
+            location:'Atlanta, GA',
+            status:'On Request'
+        },
+        {
+            location:'Boston, MA',
+            status:'4th delivery'
+        },
+        {
+            location:'Dallas TX',
+            status:'4th delivery'
+        }
+    ],
+    Bangladesh:[
+        {
+            location:'Gaibandha',
+            status:'On Request'
+        },
+        {
+            location:'Rangpur',
+            status:'On Request'
+        },
+        {
+            location:'Dhaka',
+            status:'4th Delivery'
+        }
+    ],
+    india:[
+        {
+            location:'Kolkata',
+            status:'On Request'
+        },
+        {
+            location:'Dillih',
+            status:'5th Delivery'
+        }
+    ]
+}
