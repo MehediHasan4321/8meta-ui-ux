@@ -23,10 +23,11 @@ const PriceCalculation = () => {
 
     const [pricing, setPricing] = useState({ ...intiState })
     const [ssdOrHdd, setSsdOrHdd] = useState('ssd')
-    const [usdOrGbp,setUsdOrGbp] = useState('USD')
+    const [usdOrGbp, setUsdOrGbp] = useState('USD')
     const dataCenterArr = Object.keys(dataCenters)
     const [dataCenterName, setDataCenterName] = useState<string>(dataCenterArr[0])
     const [location, setLocation] = useState<string>()
+    const [bandwidth, seBanwidth] = useState<any>(100)
     const dataCenterOption = useMemo(() => {
         //@ts-ignore
         return dataCenters[dataCenterName]
@@ -153,7 +154,7 @@ const PriceCalculation = () => {
                             <h3 className='text-lg text-primaryLight text-center '>Bandwidth</h3>
                             <h5 className='text-secondary text-[12px] text-center'>(unmetered)</h5>
                         </div>
-                        <button className='px-3 py-2 bg-primary text-white rounded-lg '> 500Mbps</button>
+                        <button className='px-3 py-2 bg-primary text-white rounded-lg '> {bandwidth}Mbps</button>
                     </div>
                     <div className='w-2 min-h-[50vh] mt-5 rounded-md bg-neutral-900 relative '>
                         <div className='absolute w-2 bg-gradient-to-b from-neutral-800 to-primaryLight h-[10vh] mt-5 rounded-lg'>
@@ -161,6 +162,8 @@ const PriceCalculation = () => {
                                 <div className=' absolute  -left-[5px] bottom-0 size-5 rounded-full bg-primaryLight cursor-pointer' />
                             </div>
                         </div>
+
+                       
                     </div>
                 </div>
 
@@ -178,10 +181,15 @@ const PriceCalculation = () => {
                     </div>
                     <div className='mt-[61px] flex flex-col items-center gap-y-3'>
                         <div>
-                        <Button className='w-fit bg-primaryLight px-[39px]'>Order Now</Button>
+                            <Button className='w-fit px-[39px]'>Order Now</Button>
                         </div>
                         <h6 className='text-[12px] text-center text-secondary'>(Choose OS & RAID & IPs)</h6>
+
                     </div>
+
+                    {/* <div className='mt-16'>
+                        <input type='range' min={100} max={2000} value={bandwidth} onChange={(e) => seBanwidth(e.target.value)} />
+                    </div> */}
 
                 </div>
             </div>

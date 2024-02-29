@@ -10,9 +10,11 @@ const SuccessStoryes = () => {
         <SectionDivider>
             <div className='w-full flex justify-between items-center'>
                 <SectionHeading>
-                    <h1>Client Success <span className='text-primary'>Stories</span></h1>
+                    <h1 className='text-center md:text-left'>Client Success <span className='text-primary'>Stories</span></h1>
                 </SectionHeading>
+                <div className='hidden md:flex'>
                 <SwiperButton />
+                </div>
             </div>
             <div className='mt-[80px]'>
                 <ClientSuccessStoryes />

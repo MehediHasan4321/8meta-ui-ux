@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ children = 'Click Me', className, onCli
     return (
         <div className='flex justify-center md:justify-start items-center w-full'>
             <button
-                className={twMerge(`w-full px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-purple-400 flex justify-center items-center gap-x-2 `, className)}
+                className={twMerge(`w-full px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-primaryLight flex justify-center items-center gap-x-2 `, className)}
                 onClick={onClick}
             >
                 {children}

@@ -768,18 +768,23 @@ export const teamMembersSwiperSetting = {
     breakpoints: {
 
         640: {
-            slidesPerView: 1
+            slidesPerView: 1.5
         },
         768: {
-            slidesPerView: 1
+            slidesPerView: 1.5
         },
         1024: {
             slidesPerView: 2
         },
-        1100: {
-            slidesPerView: 3.5
+        1280: {
+            slidesPerView: 2.5
         },
-
+        1400:{
+            slidesPerView:3
+        },
+        1550:{
+            slidesPerView:3.5
+        }
     },
 }
 

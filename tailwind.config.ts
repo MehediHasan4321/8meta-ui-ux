@@ -21,7 +21,7 @@ const config: Config = {
         'heardware-gradient-bg':'url(/images/gradient-bg.png)',
         'useCase-bg':'url(/images/useCase-bg.png)',
         'useCaseBanner':'url(/images/useCase/Banner-Usecase.png)',
-        'companyBannerImg':'url(/images/company/company-bitmap.png)'
+        'companyBannerImg':'url(/images/company/company-bitmap2.png)'
       },
       
 

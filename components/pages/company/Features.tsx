@@ -50,7 +50,7 @@ const Features = () => {
 
 
     return (
-        <SectionDivider>
+        <SectionDivider className='mt-32'>
             <div className='flex flex-col gap-y-7'>
 
                 {/* heading */}
@@ -66,7 +66,7 @@ const Features = () => {
 
                 {/* featurs card sections */}
 
-                <div className='w-full h-auto flex items-center justify-around flex-wrap mt-[70px]'>
+                <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-6 mt-[70px]'>
                     {
                         fCards.map(card => <FCard key={card.title} {...card} />)
                     }
@@ -120,13 +120,13 @@ const Features = () => {
                     <SectionHeading>
                         deliver <span className='text-primary'>the finest</span> service
                     </SectionHeading>
-                    <SectionPara className='w-full md:w-2/5'>
+                    <p className='w-full md:w-2/5 text-md text-center md:text-left mt-3 '>
 
                         Exceptional customer service is at the heart of our philosophy. When you reach out, you’ll <br /> find a knowledgeable team ready to provide quick, helpful advice and solutions.
 
-                    </SectionPara>
+                    </p>
                 </div>
-                <div className='mt-[60px] flex flex-col md:flex-row items-center justify-around'>
+                <div className='mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {
                         fCardBottoms.map(card=><FCardBottom key={card.heading} {...card}/>)
                     }
@@ -147,8 +147,8 @@ interface FCardProps {
 
 const FCard: React.FC<FCardProps> = ({ title, heading, desc }) => {
     return (
-        <div className='w-[420px] h-[300px] bg-blackAcent rounded-xl overflow-hidden flex flex-col gap-y-6 pt-[57px] pl-[40px] pb-[40px] pr-[50px] '>
-            <h1 className='text-6xl text-primary font-semibold '>{title}</h1>
+        <div className='w-full min-h-[300px] bg-blackAcent rounded-xl overflow-hidden flex flex-col gap-y-6 pt-[57px] pl-[40px] pb-[40px] pr-[50px] '>
+            <h1 className=' text-4xl lg:text-6xl text-primary font-semibold '>{title}</h1>
 
             <div className='flex flex-col gap-y-2'>
                 <h3 className='text-2xl text-white font-semibold'>{heading}</h3>
@@ -167,7 +167,7 @@ interface FCardBottomProps {
 
 const FCardBottom: React.FC<FCardBottomProps> = ({ image, heading, desc }) => {
     return (
-        <div className='w-[420px] h-[300px] bg-blackAcent rounded-xl overflow-hidden flex flex-col pt-[57px] pl-[40px] pb-[40px] pr-[50px] '>
+        <div className='w-full min-h-[300px] bg-blackAcent rounded-xl overflow-hidden flex flex-col pt-[57px] pl-[40px] pb-[40px] pr-[50px] '>
             <div className='w-[44px] h-[44px] relative '>
                 <Image src={image} fill alt='image' className='w-full h-full ' />
             </div>

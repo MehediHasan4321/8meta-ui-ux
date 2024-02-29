@@ -25,7 +25,7 @@ const TeamMemeberCard: React.FC<TeamMemeberCardProps> = ({
     const {Icon,title,url} = socialIcon
 
     return (
-        <div className='w-[420px] h-[560px] rounded-[30px] overflow-hidden relative bg-primary'>
+        <div className='w-full max-w-[420px] h-[560px] rounded-[30px] overflow-hidden relative bg-primary'>
             <Image src={avater} fill className='w-full h-full' alt='team memeber' />
 
 
