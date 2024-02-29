@@ -15,7 +15,7 @@ interface ActiveHardwareDetailsProps{
 
 const ActiveHardwareDetails:React.FC<ActiveHardwareDetailsProps> = ({activeHardwareDetails}) => {
     return (
-        <div className='w-full bg-blackAcent flex flex-col gap-y-[56px]'>
+        <div className='w-full flex flex-col gap-y-[56px]'>
                     <div className='flex flex-col items-start gap-y-2'>
                         <h1 className='text-5xl font-semibold text-center'>{activeHardwareDetails?.hardwareName}</h1>
                         <div className='text-lg text-secondary tracking-[5px]'>

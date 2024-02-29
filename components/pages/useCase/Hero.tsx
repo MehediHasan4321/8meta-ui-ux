@@ -24,7 +24,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='w-full md:w-1/2  lg:w-4/6 h-full aspect-square relative  -mt-[60px] md:mt-0'>
-                    <Image src={'/images/useCase/Banner-Usecase.png'} fill className='w-full h-full object-cover' alt='useCase banner' />
+                    <Image src={'/images/useCase/Banner-Usecase.png'} fill className='w-full h-full object-fill' alt='useCase banner' />
                 </div>
                 <div className='absolute bottom-10  md:bottom-0 xl:bottom-5 2xl:bottom-16 w-full z-50 '>
                     

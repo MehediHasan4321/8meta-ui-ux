@@ -29,7 +29,7 @@ const HardwareDetails = () => {
     return (
         <Container className='mt-[97px]'>
             <div className='grid grid-cols-12 gap-x-6'>
-                <div className='col-span-3  flex flex-col gap-y-4 bg-blackAcent pl-4'>
+                <div className='hidden md:flex col-span-3 flex-col gap-y-4  pl-4'>
                     <p className='text-lg text-white'>Builds per CPU</p>
                     <div className='flex flex-col gap-y-3'>
                         {
@@ -44,7 +44,7 @@ const HardwareDetails = () => {
                             <ActiveHardwareDetails activeHardwareDetails={activeHardwareDetails} />
                         </div>
 
-                        <div className='w-2/5 bg-blackAcent min-h-[30vh] relative'>
+                        <div className='w-2/5 min-h-[30vh] relative'>
                             <Image src={'/images/processor.png'} width={600} height={481} alt={acitveHardware} />
                         </div>
                     </div>

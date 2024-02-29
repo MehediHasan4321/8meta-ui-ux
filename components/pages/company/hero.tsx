@@ -7,9 +7,9 @@ import ServerClient from "../home/ServerClient"
 const Hero = () => {
     return (
         
-        <Container className="min-h-[70vh] w-full flex flex-col -z-10  md:-mt-32 lg:-mt-10 lg:bg-companyBannerImg bg-right-top bg-no-repeat ">
+        <Container className="min-h-[70vh] w-full flex flex-col justify-around lg:justify-between -z-10  md:mt-12 lg:mt-12 lg:bg-companyBannerImg bg-right-top bg-no-repeat ">
             <div className="w-full h-full flex ">
-                <div className="h-full w-full lg:w-3/5 flex flex-col gap-y-5 justify-center items-center">
+                <div className="h-full w-full lg:w-3/5 flex flex-col gap-y-5 justify-around items-center">
                     <div>
                         <div className='text-center lg:text-left text-3xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl space-y-2 font-semibold text-white'>
                             <h1>Cutting-edge infrastructure</h1>
