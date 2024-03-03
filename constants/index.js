@@ -319,51 +319,52 @@ export const menus = [
 
 
     },
-    {
-        name: 'Location',
-        subMenu: [
-            {
-                name: 'Premume Network',
-                icon: MdNetworkCheck,
-                url: '/'
-            },
-            {
-                name: 'Exceptional client service',
-                icon: IoDiamondOutline,
-                url: '/'
-            },
-            {
-                name: 'Built-in DDoS protection',
-                icon: MdOutlineSecurity,
-                url: ''
-            },
-            {
-                name: 'Latest hardware',
-                icon: GrStorage,
-                url: '/'
-            }
-        ]
-    },
+    // {
+    //     name: 'Location',
+    //     subMenu: [
+    //         {
+    //             name: 'Premume Network',
+    //             icon: MdNetworkCheck,
+    //             url: '/'
+    //         },
+    //         {
+    //             name: 'Exceptional client service',
+    //             icon: IoDiamondOutline,
+    //             url: '/'
+    //         },
+    //         {
+    //             name: 'Built-in DDoS protection',
+    //             icon: MdOutlineSecurity,
+    //             url: ''
+    //         },
+    //         {
+    //             name: 'Latest hardware',
+    //             icon: GrStorage,
+    //             url: '/'
+    //         }
+    //     ]
+    // },
     {
         name: 'Use Cases',
         subMenu: [
-            {
-                name: 'Use Case',
-                icon: MdNetworkCheck,
-                url: '/useCase'
-            },
-            {
-                name: 'Company',
-                icon: IoDiamondOutline,
-                url: '/company'
-            },
-            {
-                name: 'Pricing',
-                icon: FaDollarSign,
-                url: '/pricing'
-            }
+            // {
+            //     name: 'Use Case',
+            //     icon: MdNetworkCheck,
+            //     url: '/useCase'
+            // },
+            // {
+            //     name: 'Company',
+            //     icon: IoDiamondOutline,
+            //     url: '/company'
+            // },
+            // {
+            //     name: 'Pricing',
+            //     icon: FaDollarSign,
+            //     url: '/pricing'
+            // }
 
-        ]
+        ],
+        url:'/useCase'
     },
     {
         name: 'Pricing',
