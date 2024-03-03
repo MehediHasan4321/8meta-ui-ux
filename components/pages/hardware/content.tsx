@@ -8,28 +8,24 @@ const Content = () => {
         <SectionDivider>
             <h4 className='text-primary text-start text-lg uppercase tracking-[5px] '>WHY CHOOSE 8meta</h4>
             <div className='w-full flex flex-col md:flex-row gap-y-6 items-center justify-between mt-16'>
-                <div>
-                    <Bitmap src='/images/hardwares/bitmap1.png'>
-                        <Heading heading='Reliable Hardware,' />
-                        <Heading heading='Always-on Support' />
-                        <SectionPara className='text-sm text-justify'>
-                            8Meta servers are equipped with tried-and tested hardware.
-                            In the rare event of a hardware failure,
-                            the faulty component is replaced within 120 minutes.
-                        </SectionPara>
-                    </Bitmap>
-                </div>
+                <Bitmap src='/images/hardwares/bitmap1.png'>
+                    <Heading heading='Reliable Hardware,' />
+                    <Heading heading='Always-on Support' />
+                    <SectionPara className='text-sm text-justify px-2'>
+                        8Meta servers are equipped with tried-and tested hardware.
+                        In the rare event of a hardware failure,
+                        the faulty component is replaced within 120 minutes.
+                    </SectionPara>
+                </Bitmap>
 
 
-                <div>
-                    <Bitmap src='/images/hardwares/bitmap2.png'>
-                        <Heading heading='Reliable Hardware,' />
-                        <Heading heading='Always-on Support' />
-                        <SectionPara className='text-sm text-justify'>
-                            With our month-to-month billing, numerous hardware options and flexible bandwidth plans, you can scale up (and down) to match your current workload requirements.
-                        </SectionPara>
-                    </Bitmap>
-                </div>
+                <Bitmap src='/images/hardwares/bitmap2.png'>
+                    <Heading heading='Reliable Hardware,' />
+                    <Heading heading='Always-on Support' />
+                    <SectionPara className='text-sm text-justify px-2'>
+                        With our month-to-month billing, numerous hardware options and flexible bandwidth plans, you can scale up (and down) to match your current workload requirements.
+                    </SectionPara>
+                </Bitmap>
             </div>
 
         </SectionDivider>
@@ -46,7 +42,7 @@ interface BitmapProps {
 const Bitmap: React.FC<BitmapProps> = ({ src, children }) => {
     return (
         <div className='w-full flex flex-col gap-y-[45px]'>
-            <div className='w-[600px] h-[420px] overflow-hidden rounded-2xl relative'>
+            <div className='w-[350px] h-[280px] lg:w-[470px] lg:h-[320px] xl:w-[600px] xl:h-[420px] overflow-hidden rounded-2xl relative'>
                 <Image src={src} fill className='w-full h-full' alt='bitmap' />
             </div>
             <div className='flex flex-col gap-y-3'>

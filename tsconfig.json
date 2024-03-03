@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/header/MenuBar.jsx", "components/home/Testimonials.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/header/MenuBar.jsx", "components/home/Testimonials.jsx", "components/pages/pricing/PriceCalculation.jsx"],
   "exclude": ["node_modules"]
 }

@@ -1,7 +1,6 @@
 'use client'
 import Container from "@/components/share/Container"
 import { Clients } from "@/constants"
-import Image from "next/image"
 import ServerClient from "../home/ServerClient"
 
 const Hero = () => {

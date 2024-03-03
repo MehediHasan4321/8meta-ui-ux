@@ -38,19 +38,39 @@ const HardwareDetails = () => {
                     </div>
                 </div>
 
-                <div className='col-span-9'>
-                    <div className='w-full flex gap-x-4'>
-                        <div className='w-3/5'>
+                {/* Only visible when it's mobile devices */}
+
+                <form className='col-span-12 m-5  md:hidden '>
+                    <select
+                        className=' w-full px-4 py-3 rounded-md bg-blackAcent border-[1px] border-borderColor '
+                        id='hardwareName'
+                        value={acitveHardware}
+                        onChange={e => setActiveHardware(e.target.value)}
+                    >
+                        {
+                            hardwares.map(item => <option
+                                key={item.hardwareName}
+                                value={item.hardwareName}
+                                className={item.hardwareName === acitveHardware?'text-primary':'text-white'}
+                                
+                            >
+                                {item.hardwareName}
+                            </option>)
+                        }
+                    </select>
+                </form>
+
+                <div className='col-span-12 md:col-span-9'>
+                    <div className='w-full flex gap-x-4 items-center'>
+                        <div className='w-full px-3 md:px-0'>
                             <ActiveHardwareDetails activeHardwareDetails={activeHardwareDetails} />
                         </div>
 
-                        <div className='w-2/5 min-h-[30vh] relative'>
-                            <Image src={'/images/processor.png'} width={600} height={481} alt={acitveHardware} />
-                        </div>
+
                     </div>
 
                     {
-                        arr.map(item => <Options 
+                        arr.map(item => <Options
                             key={item}
 
                             //@ts-ignore

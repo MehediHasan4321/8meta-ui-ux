@@ -17,7 +17,7 @@ const Storage: React.FC<StorageProps> = ({ storage, onClick, active }) => {
     return (
         <div
             onClick={() => onClick(storage)}
-            className={active ? 'w-full border-[1px] text-primaryLight border-borderColor rounded-lg px-3 py-[10px] text-center cursor-pointer' : 'w-full text-white bg-blackAcent rounded-lg px-3 py-[10px] text-center cursor-pointer'} >
+            className={active ? 'w-full border-[1px] text-primaryLight border-borderColor rounded-lg px-3 py-[10px] text-center cursor-pointer text-[12px] xl:text-md' : 'w-full text-white bg-blackAcent text-[12px] xl:text-md rounded-lg px-1 xl:px-3 py-[10px] text-center cursor-pointer'} >
             {storage.storage}
         </div>
     );

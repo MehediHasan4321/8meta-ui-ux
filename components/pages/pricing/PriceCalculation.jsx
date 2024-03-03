@@ -2,13 +2,11 @@
 
 import Container from '@/components/share/Container';
 import { dataCenters, hardwares, memoryes, storages } from '@/constants';
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { GrPowerReset } from 'react-icons/gr';
 import CPU from './CPU';
 import Memory from './Memory';
 import Storage from './Storage';
-import { MdKeyboardArrowDown } from 'react-icons/md';
-import { objToArr } from '@/utils';
 import DataCenterOption from './DataCenterOption';
 import Button from '@/components/ui/Button';
 
@@ -18,35 +16,37 @@ const PriceCalculation = () => {
         memory: { memory: '', price: 0 },
         storage: { storage: '', price: 0 },
         bandwidth: { bandwith: '', price: 0 },
-        location: ''
+        dataCenter : {region:'',state:'',price:0}
+
     }
 
     const [pricing, setPricing] = useState({ ...intiState })
     const [ssdOrHdd, setSsdOrHdd] = useState('ssd')
     const [usdOrGbp, setUsdOrGbp] = useState('USD')
     const dataCenterArr = Object.keys(dataCenters)
-    const [dataCenterName, setDataCenterName] = useState<string>(dataCenterArr[0])
-    const [location, setLocation] = useState<string>()
-    const [bandwidth, seBanwidth] = useState<any>(100)
+    const [dataCenterName, setDataCenterName] = useState(dataCenterArr[0])
+    const [bandwidth, seBanwidth] = useState(100)
     const dataCenterOption = useMemo(() => {
-        //@ts-ignore
+
         return dataCenters[dataCenterName]
     }, [dataCenterName])
 
 
+    
 
     const storageArr = useMemo(() => {
-        //@ts-ignore
+
         return storages[ssdOrHdd]
     }, [ssdOrHdd])
 
 
 
+    
 
 
-    const handleMemory = (memory: string, price: number) => {
-        console.log(memory)
-    }
+
+
+
 
     return (
         <Container>
@@ -70,7 +70,14 @@ const PriceCalculation = () => {
                     </div>
                     <div className='flex flex-col gap-y-[10px]'>
                         {
-                            hardwares.map(item => <CPU key={item.id} name={item.hardwareName} cpu={item.hardwareConfig} tag={item.tag} onClick={name => console.log(name)} />)
+                            hardwares.map(item => <CPU key={item.id}
+                                name={item.hardwareName}
+                                cpu={item.hardwareConfig}
+                                tag={item.tag}
+                                price={item.price}
+                                active={item.hardwareName === pricing['cpu'].name}
+                                onClick={(data) =>setPricing({...pricing,cpu:data})}
+                            />)
                         }
                     </div>
                 </div>
@@ -83,7 +90,12 @@ const PriceCalculation = () => {
                     </div>
                     <div className='flex flex-col gap-y-3'>
                         {
-                            memoryes.map(memory => <Memory key={memory.memory} {...memory} onClick={(memory, price) => handleMemory(memory, price)} />)
+                            memoryes.map(memory => <Memory
+                                key={memory.memory}
+                                active={pricing['memory'].memory === memory.memory}
+                                {...memory}
+                                onClick={(value)=>setPricing({...pricing,memory:{...value}})}
+                            />)
                         }
                     </div>
                 </div>
@@ -102,7 +114,12 @@ const PriceCalculation = () => {
                     <div className='w-full flex flex-col gap-y-4'>
                         {
                             //@ts-ignore
-                            storageArr?.map(item => <Storage key={item.storage} storage={item} onClick={() => console.log('I am from storage')} />)
+                            storageArr?.map(item => <Storage
+                                key={item.storage}
+                                storage={item}
+                                active={item.storage === pricing.storage.storage}
+                                onClick={(value)=>setPricing({...pricing,storage:{...value}})}
+                            />)
                         }
                     </div>
 
@@ -140,8 +157,8 @@ const PriceCalculation = () => {
                             dataCenterOption.map(option => <DataCenterOption
                                 key={option.location}
                                 {...option}
-                                onClick={(data) => setLocation(data)}
-                                active={location === option.location}
+                                onClick={location => setPricing({...pricing,dataCenter:{region:dataCenterName,state:location,price:0}})}
+                                active={option.location === pricing.location}
                             />)
                         }
                     </div>
@@ -163,7 +180,7 @@ const PriceCalculation = () => {
                             </div>
                         </div>
 
-                       
+
                     </div>
                 </div>
 
@@ -176,7 +193,7 @@ const PriceCalculation = () => {
                         </div>
                     </div>
                     <div className='mt-[80px] flex flex-col gap-y-1'>
-                        <h1 className='text-5xl font-normal text-primaryLight text-center'>$251</h1>
+                        <h1 className='text-5xl font-normal text-primaryLight text-center'>${pricing['bandwidth'].price+pricing['cpu'].price+pricing['memory'].price+pricing['storage'].price}</h1>
                         <h6 className='text-[16px] text-secondary text-center'>per month</h6>
                     </div>
                     <div className='mt-[61px] flex flex-col items-center gap-y-3'>
