@@ -6,19 +6,22 @@ import { Submenu } from '@/types';
 import React, { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import MobailSubMenu from './MobailSubMenu';
+import { useRouter } from 'next/navigation';
 
 
 interface MobileMenuItemProps {
     name: string,
     subMenu: Submenu[],
     index: number,
-    lastMenu: number
+    lastMenu: number,
+    url?:string
 }
 
-const MobileMenuItem: React.FC<MobileMenuItemProps> = ({ name, subMenu }) => {
+const MobileMenuItem: React.FC<MobileMenuItemProps> = ({ name, subMenu,url }) => {
 
     const [show, setShow] = useState<boolean>(false)
     const debounceValue = useDebounce(show, 200)
+    const router = useRouter()
 
     //This function hide submenu only
     const handleRemove = () => {
@@ -26,8 +29,19 @@ const MobileMenuItem: React.FC<MobileMenuItemProps> = ({ name, subMenu }) => {
         setShow(false)
     }
 
+  const handleUrl = ()=>{
+    if(subMenu.length>0){
+        return
+    }else{
+        //@ts-ignore
+        router.push(url)
+    }
+  }
+
     return (
         <div
+        //@ts-ignore
+        onClick={handleUrl}
             onMouseOver={() => setShow(true)}
             onMouseOut={() => setShow(false)}
             className='relative'>
